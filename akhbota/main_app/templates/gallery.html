@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Hodowla Akhbota{% endblock %}
+
+{% block content %}
+
+<!-- Galeria -->
+<div id="gallery" class="container rounded shadow p-3 mb-5 mt-5">
+    <p class="col-12 text-center display-6" data-lang-key="gallery_title">Galeria</p>
+      
+    {% for item in gallery_items %}
+        <div class="row">
+            <div class="col-sm">
+            <a class="" role="button">
+                <img class="" src="{{item.image.url}}">
+            </a>
+            </div>
+        </div>
+      {% endfor %}
+
+</div>
+
+
+{% endblock %}
+

@@ -178,7 +178,26 @@ nav .container {
 #certificates{
     max-width: var(--div-size);
 }
+/* Blog */
 
+#blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: var(--div-size);
+}
+
+#blog img {
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#blog img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
 
 /* Gallery */
 

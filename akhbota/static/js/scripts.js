@@ -27,8 +27,42 @@
 // Gallery
 
   document.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.getElementById('galeria');
-    const images = gallery.getElementsByTagName('img');
+    const target = document.getElementById('gallery');
+    const images = target.getElementsByTagName('img');
+
+    // Create modal overlay
+    const modalOverlay = document.createElement('div');
+    modalOverlay.classList.add('modal-overlay');
+
+    // Create zoomed image container
+    const zoomedImage = document.createElement('img');
+    zoomedImage.classList.add('zoomed-image');
+    modalOverlay.appendChild(zoomedImage);
+
+    // Append modal overlay to body
+    document.body.appendChild(modalOverlay);
+
+    // Add click event to each image in the gallery
+    for (let img of images) {
+      img.addEventListener('click', function () {
+        // Set the source of the zoomed image to the clicked image's source
+        zoomedImage.src = this.src;
+        // Show the modal overlay
+        modalOverlay.style.display = 'flex';
+      });
+    }
+
+    // Add click event to the modal overlay to close it
+    modalOverlay.addEventListener('click', function () {
+      this.style.display = 'none';
+    });
+  });
+
+// Blog
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('blog');
+    const images = target.getElementsByTagName('img');
 
     // Create modal overlay
     const modalOverlay = document.createElement('div');
@@ -95,6 +129,7 @@
       nav_hodowla_2: "Bolończyk",
       nav_hodowla_3: "Rosyjska Bolonka Kolorowa",
       nav_gallery: "Galeria",
+      nav_blog: "Aktualności",
       nav_contact: "Kontakt",
 
       hodowla_description_1: "Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.",
@@ -125,6 +160,7 @@
       nav_hodowla_2: "Bolognese",
       nav_hodowla_3: "Russian Colorful Bolognese",
       nav_gallery: "Gallery",
+      nav_blog: "News",
       nav_contact: "Contact",
 
       hodowla_description_1: "A puppy is a young dog. Some puppies can weigh 1-1.5 kg, while larger ones can weigh up to 7-11 kg. All puppies show primary variability, and healthy puppies grow rapidly after birth.",
