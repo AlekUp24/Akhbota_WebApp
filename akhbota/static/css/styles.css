@@ -1,0 +1,365 @@
+
+#test-palette {
+    /* https://colorhunt.co/palette/7469b6ad88c6e1afd1ffe6e6 */
+    background-color: #7469B6 #AD88C6 #E1AFD1 #FFE6E6 rgb(116, 105, 182) rgb(173, 136, 198) rgb(225, 175, 209) rgb(255, 230, 230);
+    /* https://colorhunt.co/palette/fff2ccffd966f4b183dfa67b */
+    background-color:#FFF2CC #FFD966 #F4B183 #DFA67B rgb(255, 242, 204) rgb(255, 217, 102) rgb(244, 177, 131) rgb(223, 166, 123); 
+}
+
+:root {
+    --body-background-color: ;
+
+    --div-size: 1300px;
+    --div-background-color: #f8ecec; 
+
+    --nav-color: #8b83bd;
+    --nav-font-hover-color: #FFF2CC;
+
+    --carousel-caption-color: #ffff;
+    
+    --footer-icon-hover-color: #FFF2CC;
+    --footer-text-color: #2c2424;    
+}
+
+
+/* General */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    background-color: var(--div-background-color);
+}
+
+.container {
+    text-align: center;
+    background-color: #f3f0e8
+}
+
+/* Navbar */
+
+nav .container {
+    background-color: transparent;
+}
+
+.my-navbar-color {
+    background-color: var(--nav-color); 
+    font-family: "Source Code Pro", monospace;
+}
+
+.my-nav-item {
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    padding-bottom: 0px;
+}
+
+.my-nav-item:hover {
+    transition: 0.3s ease-in-out;
+    border-bottom-color: var(--nav-font-hover-color);
+}
+
+.logo {
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.toggle-button-translate:hover {
+    border-bottom-color: transparent;
+}
+
+/* Carousel */
+
+
+
+.carousel {
+    max-height: 500px;
+    max-width: var(--div-size);
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: middle;
+    max-height: 500px;
+}
+
+.carousel-item {
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    right: 15%;
+    bottom: 5.5rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: var(--carousel-caption-color);
+    text-align: center;
+  }
+
+
+/* About */
+
+#o-nas{
+    text-align: left;
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: var(--div-size);
+}
+
+#o-nas img{
+    border-radius: 5%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Hodowla */
+
+#hodowla {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: var(--div-size);
+}
+
+#hodowla img{
+    border-radius: 5%;
+    max-width: 380px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#hodowla img:hover{
+    border-radius: 15%;
+    opacity: 0.4;
+    transition: 0.3s ease-in-out;
+}
+
+.toggled-opacity {
+    opacity: 0.4;
+}
+
+.breed-details {
+    display: grid;
+    width: 90%;
+    text-align: justify;
+    font-size: large;
+}
+
+
+/* Co Nas Wyróżnia */
+
+#co-wyroznia{
+    max-width: var(--div-size);
+    justify-content: space-evenly;
+}
+
+#co-wyroznia i{
+    font-size: 4rem;
+    transition: 0.3s ease-in-out;
+}
+
+#co-wyroznia i:hover{
+    color: var(--nav-color);
+    transition: 0.3s ease-in-out;
+}
+
+/* Certyfikaty */
+
+#certyfikaty{
+    max-width: var(--div-size);
+}
+
+
+/* Galeria */
+
+#galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: var(--div-size);
+}
+
+#galeria img {
+    border-radius: 5%;
+    max-width: 350px;
+    height: 500px;
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#galeria img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+  
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+/* Kontakt */
+
+#kontakt{
+    max-width: var(--div-size);
+}
+
+/* Cookies  */
+
+.cookies-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+    
+.cookies-popup.show {
+    transform: translateY(0);
+}
+    
+.accept-cookies {
+    background-color: var(--nav-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    right: 50px; 
+}
+
+.accept-cookies:hover {
+    background-color: var(--nav-color);
+}
+
+
+/* Go Top Button  */  
+
+.go-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    opacity: 0.75; 
+    background-color: var(--nav-color); 
+    color: #ffff; 
+    border: 1px solid #ffff; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 24px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: opacity 0.3s, background-color 0.3s;/
+  }
+
+.go-top:hover {
+    opacity: 1; 
+    text-decoration: none;
+    background-color: var(--nav-color);
+    color: #ffff; 
+}
+
+
+/* Footer  */
+
+#stopka{
+    display: flex;
+    background-color: var(--nav-color); 
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 0px;
+    font-size:medium;
+    text-align: center;
+}
+
+#stopka a {
+    color: var(--footer-text-color);
+    font-size: larger;
+    transition: 0.3s ease-in-out;
+}
+
+#stopka a:hover {
+    color: var(--footer-icon-hover-color);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
