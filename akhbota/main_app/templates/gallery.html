@@ -6,8 +6,17 @@
 
 <!-- Galeria -->
 <div id="gallery" class="container rounded shadow p-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6" data-lang-key="gallery_title">Galeria</p>
+    <div class="row col-12 text-center mb-4">
+        <p class="display-6" data-lang-key="gallery_title">Galeria</p>
       
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            {% for value, display in choices %}
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio{{ forloop.counter }}" value="{{ value }}" autocomplete="off" {% if value == default_value %}checked{% endif %}>
+                <label class="btn btn-outline-secondary" for="btnradio{{ forloop.counter }}">{{ display }}</label>
+            {% endfor %}
+        </div>
+    </div>
+
     {% for item in gallery_items %}
         <div class="row">
             <div class="col-sm">
