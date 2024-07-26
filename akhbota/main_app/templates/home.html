@@ -1,256 +1,43 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Hodowla Akhbota{% endblock %}
 
 {% block content %}
 
 <!-- Carousel -->
-  <center>
-    <div style="">
-      <div id="carouselExampleCaptions" class="carousel slide carousel-custom" data-bs-ride="carousel">
-        <div class="carousel-indicators" style="display: none;">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
 
-        <div class="carousel-inner rounded">
-          <div class="carousel-item active" data-bs-interval="3500">
-            <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/409000168_7613455422016570_2141877439079197297_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zIHQY_K7V8wQ7kNvgHHIdVS&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYANiw3ebGTqWL9_Y3ryNuV-m2SDJP-OBAzFJUU_7I7Dog&oe=66A54575"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption-custom d-none d-md-block" style="color: transparent;">
-              <h4>First slide label</h4>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/353037461_233495676077337_5071483629877258517_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vs_Fk7DgUFEQ7kNvgFrKDBj&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYCWeHAPh409KZl5Y0ZRo1CLgJSxIvbTDFMCrgoU3nTU7w&oe=66A541A3"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption-custom d-none d-md-block" style="color: transparent;">
-              <h4>Second slide label</h4>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/348844231_685843386886042_1364703956605061731_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4oimv9hmKSgQ7kNvgFsABOW&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYDRoyjUQKYaUg4Nvf6OR1UPPxNmG_dxenHYTpKx4RmE7g&oe=66A55C4C"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption-custom d-none d-md-block" style="color: transparent;">
-              <h4>Third slide label</h4>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-
-      </div>
-    </div>
-  </center>
+  {% include 'sections/carousel.html'%}
     
 <!-- About -->
-  <center>
-    <div id="o-nas" class="container content-container rounded shadow py-3 mb-5 mt-5">
-      <div class="row">
-        
-        <div class="col-md mt-3 mb-3 text-center">
-          <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/353037461_233495676077337_5071483629877258517_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vs_Fk7DgUFEQ7kNvgFrKDBj&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYCWeHAPh409KZl5Y0ZRo1CLgJSxIvbTDFMCrgoU3nTU7w&oe=66A541A3">
-        </div>
-        
-        <div class="col-md mt-5">
-            <p class="text-center display-6" data-lang-key="about_title" >O Nas</p>
-            <p data-lang-key="about_description">
-              Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.<br><br>
-              Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.<br><br>
-              Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.<br><br> 
-            </p>
-            <center>
-              <h5 data-lang-key="about_fb_link">Po więcej aktualności zapraszamy do śledzenia naszego</h5><h4><a href="https://www.facebook.com/HodowlaBolonczykowAkhbotaFCI?paipv=0&eav=Afb5sr_5TEE5R_lxpkRe8Msw9KisZKaB6lg7qy9zb0TjF2-1lVV6TZBx6ezeBwqIo8U"><i class="bi bi-facebook"></i> Facebook<a></h4>
-            </center>
-        </div>
-
-      </div>
-    </div>
-  </center>
-    
-<!-- Hodowla -->
-  <div id="hodowla" class="container content-container rounded shadow py-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6 mb-5" data-lang-key="nav_hodowla">Hodowla</p>
-    
-    <div class="row">
-
-      <div class="col-sm">
-        <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
-          <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/353037461_233495676077337_5071483629877258517_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vs_Fk7DgUFEQ7kNvgFrKDBj&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYCWeHAPh409KZl5Y0ZRo1CLgJSxIvbTDFMCrgoU3nTU7w&oe=66A541A3">
-          <h4 data-lang-key="nav_hodowla_1">Szczenięta</h4>
-        </a>
-        <div class="collapse breed-details" id="collapse1">
-          <div class="text-muted" data-lang-key="hodowla_description_1">
-            Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.
-          </div>
-        </div>
-      </div>
+  
+  {% include 'sections/about.html'%}
       
-      <div class="col-sm">
-        <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
-            <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/275789320_106067515377517_3529880044323117154_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=h9xQtDyszUMQ7kNvgEAJNAM&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYC88o13M7RajtmeJNlUtSAANgDWplVqvU_ENiMvncA1dw&oe=66A518B5">
-            <h4 data-lang-key="nav_hodowla_2" style="text-decoration: none;">Bolończyk</h4>
-        </a>
-        <div class="collapse breed-details" id="collapse2">
-          <div class="text-muted" data-lang-key="hodowla_description_2">
-            Bolończyk to jedna z ras psów, należąca do grupy psów do towarzystwa, zaklasyfikowana do sekcji biszonów i ras pokrewnych. Typ lisowaty. Nie podlega próbom pracy.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm">
-        <a class="text-dark text-decoration-none" data-bs-toggle="collapse"  href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
-            <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/450797540_462637636496472_5278287993531627648_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nfRP4te2mlsQ7kNvgGK_v_f&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYBolaQMs1rw0EbH0i8THzU76_hdTm4e-VfTFIOU_QgQRw&oe=66A524B0">
-            <h4 data-lang-key="nav_hodowla_3" style="text-decoration: none;">Rosyjska Bolonka Kolorowa</h4>
-        </a>
-        <div class="collapse breed-details" id="collapse3">
-          <div class="text-muted" data-lang-key="hodowla_description_3">
-            Rosyjska Tsvetnaya Bolonka, znana również jako Bolonka Zwetna w Niemczech lub znana po prostu jako Bolonka, to rzadka rasa zabawek typu Bichon, opracowana w Moskwie i Sankt Petersburgu w Rosji, od przodków mniejszych psów, takich jak Bichon Frise , Pudel Toy, Shih Tzu, Pekińczyk i Francuski Bolognese.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>  
-
-
+<!-- Hodowla -->
+  
+  {% include 'sections/kennel.html'%}
 
 <!-- Co Nas Wyróżnia -->
 
-  <div id="co-wyroznia" class="container rounded shadow py-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6 mb-5" data-lang-key="wyroznienie_title">Co Nas Wyróżnia</p>
-
-      <div class="row">
-              
-        <div class="col-md-3 col-sm-6 margin-bottom-sm margin-bottom-xs">
-          <p><i class="bi bi-award"></i></p>
-          <p data-lang-key="badge_description_1">Psy wystawowe</p>
-        </div>
-        <div class="col-sm-6 margin-bottom-xs margin-bottom-sm col-md-3">
-          <p><i class="bi bi-patch-check"></i></p>
-          <p data-lang-key="badge_description_2">Hodowla Certyfikowana</p>
-        </div>
-        <div class="col-sm-6 margin-bottom-xs margin-bottom-sm col-md-3">
-          <p><i class="bi bi-trophy"></i></p>
-          <p data-lang-key="badge_description_3">Nasze psy zdobyły wiele wyróżnień</p>
-        </div>
-        <div class="col-sm-6 margin-bottom-xs margin-bottom-sm col-md-3">
-          <p><i class="bi bi-lungs"></i></p>
-          <p data-lang-key="badge_description_4">Dbamy o&nbsp;regularną kontrolę zdrowia naszych psów</p>
-        </div>
-
-      </div>
-    
-  </div>
+  {% include 'sections/why-us.html'%}
 
 <!-- Certyfikaty -->
 
-  <div id="certyfikaty" class="container rounded shadow py-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6 mb-5" data-lang-key="certificates_title">Nagrody i Certyfikaty</p>
-      Certyfikaty, licencje , organizacje 
-    <hr>
-  </div>
+  {% include 'sections/certificates.html'%}
 
 <!-- Galeria -->
-  <div id="galeria" class="container rounded shadow p-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6" data-lang-key="gallery_title">Galeria</p>
-      
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/445400388_8304768389551933_6503566152049243040_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BpMw8v-GJO0Q7kNvgEetyxQ&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYBgGMPq15ELDiaz27OA6uMbNJJWI7jROUBRryYVn0QChg&oe=66A512C9">
-          </a>
-        </div>
-      </div>
+  
+  {% include 'sections/gallery.html'%} 
 
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/435999959_8112959345399506_6709723339810059602_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T0xnzxaTRPwQ7kNvgFh94dm&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYDeA-cuZp2BGHKTQD0w9XSmA1LtBzXg2fRkVsxjRjRzZg&oe=66A50DEF">
-          </a>
-        </div>
-      </div>
+<!-- Contact -->
 
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/436381838_8104993929529381_7773074457916448715_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=o4HdzAifrT0Q7kNvgEuW5w0&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYBcZfRVVHCbYlYW6PXgi9TSSmGshc2ail_VVx7yd3F6NA&oe=66A51257">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/436364418_8104994016196039_8403450807798660058_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rElM133rg3cQ7kNvgHCW6pU&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYCL1nPwkAybU3NdYuzcGmYDV5vFjkXJBCAHzrvSppxN2A&oe=66A5311F">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/420169853_8029363007092474_4708628889181241114_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WxCUeOdqYusQ7kNvgFHnN_y&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYAimf5GKW-kvP04cXwZfP9RQisITQRuiWoaM5h8oBzjdA&oe=66A5398B">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <a class="" role="button">
-              <img src="https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/433934137_8020955957933179_5464425019235631124_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CYwoJSu2ydkQ7kNvgHwXjtd&_nc_ht=scontent.fpoz4-1.fna&oh=00_AYDc4e_uZBHGPL3IZYl4N4SacwcNaoTjirhW7595cTafkg&oe=66A53A34">
-          </a>
-        </div>
-      </div>
-
-  </div>
-
-
-<!-- Kontakt -->
-  <div id="kontakt" class="container rounded shadow py-3 mb-5 mt-5">
-    <p class="col-12 text-center display-6" data-lang-key="nav_contact">Kontakt</p>
-      <div class="row">
-
-        <div class="col-md my-5 text-center">
-          
-          <h4 data-lang-key="contact_title">Zapraszamy do kontaktu:</h4>  <br><br>
-          <h5>tel. 666 - 666 - 666</h5>
-          <h5>email. some@gmail.com</h5>  <br><br>
-          <b>Hodowla Akhbota</b>  <br>
-          Marcelów 17, Jedlinsk, Poland
-          
-        </div>
-
-        <div class="col-md my-3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.625825852903!2d21.155863912694077!3d51.50173357169438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718f7c01650d5fd%3A0x6a951fa0cf66173!2sMarcel%C3%B3w%2017%2C%2026-660!5e0!3m2!1spl!2spl!4v1721730212024!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </div>
-  </div>
+  {% include 'sections/contact.html'%}
 
 <!-- Cookies  -->
      
-  <div id="cookies-popup" class="cookies-popup">
-    <p>Ta strona używa plików cookies w celu zapewnienia lepszej jakości usług. Korzystając ze strony, zgadzasz się na użycie plików cookies.</p>
-    <button id="accept-cookies" class="accept-cookies">Akceptuj</button>
-  </div>
+  {% include 'sections/cookies.html'%}
 
 <!-- Go Top Button  -->    
   <a class="go-top" href="#top"><i class="bi bi-arrow-up"></i></a>
 
-</div>
 {% endblock %}
 
