@@ -117,7 +117,7 @@
 
       about_title: "O Nas",
       about_description: "Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.",
-      about_fb_link: "Po więcej aktualności zapraszamy do śledzenia naszego profilu ",
+      about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
       wyroznienie_title: "Co Nas Wyróżnia",
@@ -148,7 +148,7 @@
 
       about_title: "About Us",
       about_description: "Welcome to the website of the breeding of Maltese and Bolognese dogs - Akhbota registered to the Cynological Association in Poland and the International Cynological Organization FCI.",
-      about_fb_link: "For more news, please follow our ",
+      about_fb_link: "Make sure to follow us:",
       contact_title: "Contact us:",
       gallery_title: "Gallery",
       wyroznienie_title: "Why Us",

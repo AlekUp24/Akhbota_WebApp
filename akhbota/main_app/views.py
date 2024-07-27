@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Carousel_Items, Gellery_Items
+from django.http import JsonResponse
 # Create your views here.
 
 
@@ -10,13 +11,18 @@ def home(request):
     return render(request, 'home.html', {'carousel_items':carousel_items})
 
 
-def gallery(request):
+def gallery(request, cat):
+    print(cat)
+    if cat == 'all':
+        gallery_items = Gellery_Items.objects.all()
+        choices = Gellery_Items.CATEGORY_CHOICES
 
-    gallery_items = Gellery_Items.objects.all()
-    choices = Gellery_Items.CATEGORY_CHOICES
+        return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices, 'curr_choice':'all'})
+    else:
+        gallery_items = Gellery_Items.objects.filter(category=cat)
+        choices = Gellery_Items.CATEGORY_CHOICES
 
-    return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices})
-
+        return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices , 'curr_choice': cat})
 
 def pups(request):
 

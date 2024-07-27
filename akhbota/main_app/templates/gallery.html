@@ -9,26 +9,30 @@
     <div class="row col-12 text-center mb-4">
         <p class="display-6" data-lang-key="gallery_title">Galeria</p>
       
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group rounded">
+            <a href={% url 'gallery' 'all' %} type="button" class="btn btn-secondary" value="all">Wszystkie</a>
             {% for value, display in choices %}
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio{{ forloop.counter }}" value="{{ value }}" autocomplete="off" {% if value == default_value %}checked{% endif %}>
-                <label class="btn btn-outline-secondary" for="btnradio{{ forloop.counter }}">{{ display }}</label>
+                {% if curr_choice == value %}
+                    <a href={% url 'gallery' value %} type="button" class="btn btn-dark" value="{{ value }}">{{ display }}</a>
+                {% else %}
+                    <a href={% url 'gallery' value %} type="button" class="btn btn-outline-dark" value="{{ value }}">{{ display }}</a>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
-
-    {% for item in gallery_items %}
+    <div class="gallery-items">            
         <div class="row">
-            <div class="col-sm">
-            <a class="" role="button">
-                <img class="" src="{{item.image.url}}">
-            </a>
-            </div>
-        </div>
-      {% endfor %}
-
+        {% for item in gallery_items %}
+            {% if item.image %}
+                <div class="col-sm">
+                    <a class="" role="button">
+                        <img class="" src="{{item.image.url}}">
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    </div>
 </div>
 
-
 {% endblock %}
-

@@ -243,7 +243,6 @@ nav .container {
     border-radius: 10px;
 }
 
-
 /* Contact */
 
 #contact{
@@ -338,4 +337,3 @@ nav .container {
     color: var(--footer-icon-hover-color);
     transition: 0.3s ease-in-out;
 }
-

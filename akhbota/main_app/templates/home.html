@@ -11,7 +11,7 @@
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       {% for item in carousel_items %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
+        <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="4000">
           <img src="{{item.image.url}}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>{{ item.title }}</h5>
@@ -48,7 +48,15 @@
             Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.<br><br>
           </p>
           <center>
-            <h5 data-lang-key="about_fb_link">Po więcej aktualności zapraszamy do śledzenia naszego</h5><h4><a href="https://www.facebook.com/HodowlaBolonczykowAkhbotaFCI?paipv=0&eav=Afb5sr_5TEE5R_lxpkRe8Msw9KisZKaB6lg7qy9zb0TjF2-1lVV6TZBx6ezeBwqIo8U"><i class="bi bi-facebook"></i> Facebook<a></h4>
+            <h5 data-lang-key="about_fb_link">Zapraszamy do śledzenia nas na</h5>
+              <h3>
+                  <a href="https://www.facebook.com/HodowlaBolonczykowAkhbotaFCI?paipv=0&eav=Afb5sr_5TEE5R_lxpkRe8Msw9KisZKaB6lg7qy9zb0TjF2-1lVV6TZBx6ezeBwqIo8U" class="mx-2" style="text-decoration: none;">
+                    <i class="bi bi-facebook text-dark"></i>
+                  </a>
+                  <a href="https://www.instagram.com/urszulakoczkodaj/channel/" class="mx-2" style="text-decoration: none;">
+                    <i class="bi bi-instagram text-dark"></i>
+                  </a>
+              </h3>
           </center>
       </div>
 
