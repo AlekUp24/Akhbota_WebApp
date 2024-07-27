@@ -12,14 +12,15 @@ def home(request):
 
 
 def gallery(request, cat):
+
     print(cat)
     if cat == 'all':
-        gallery_items = Gellery_Items.objects.all()
+        gallery_items = Gellery_Items.objects.order_by('-add_date')
         choices = Gellery_Items.CATEGORY_CHOICES
 
         return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices, 'curr_choice':'all'})
     else:
-        gallery_items = Gellery_Items.objects.filter(category=cat)
+        gallery_items = Gellery_Items.objects.filter(category=cat).order_by('-add_date')
         choices = Gellery_Items.CATEGORY_CHOICES
 
         return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices , 'curr_choice': cat})
