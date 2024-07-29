@@ -1,13 +1,15 @@
 
 :root {
-    --body-background-color: #f8ececd7;
+    --body-background-color: #F7E7DC;
     --div-size: 1300px;
-    --div-background-color: #f8ecec; 
-    --nav-color: #8b83bd;
+    --div-background-color: #FFF8F3; 
+    --nav-color: #405D72;
+    --nav-font-color: #FFF2CC;
     --nav-font-hover-color: #FFF2CC;
     --carousel-caption-color: #ffff;
-    --footer-icon-hover-color: #FFF2CC;
-    --footer-text-color: #2c2424;    
+
+    --footer-icon-hover-color: #9e9b93;
+    --footer-text-color: #FFF2CC;    
 }
 
 /* General */
@@ -21,15 +23,32 @@ body {
 
 .content {
     flex: 1;
-    background-color: var(--div-background-color);
+    background-color: var(--body-background-color);
 }
 
 .container {
     text-align: center;
-    background-color: #f3f0e8;
+    background-color: var(--div-background-color);
 }
 
 /* Navbar */
+#nav a{
+    color: var(--body-background-color);
+    border-color: var(--body-background-color);
+}
+
+#nav button{
+    color: var(--body-background-color);
+}
+
+#nav button:hover{
+    color: var(--nav-color);
+    background-color: var(--body-background-color);
+}
+
+#nav .dropdown-item{
+    color: var(--nav-color);
+}
 
 nav .container {
     background-color: transparent;
@@ -38,6 +57,7 @@ nav .container {
 .my-navbar-color {
     background-color: var(--nav-color); 
     font-family: "Source Code Pro", monospace;
+    color: var(--nav-font-color);
 }
 
 .my-nav-item {
@@ -45,6 +65,7 @@ nav .container {
     border-bottom: 1px solid transparent;
     text-decoration: none;
     padding-bottom: 0px;
+    color: var(--body-background-color);
 }
 
 .my-nav-item:hover {
@@ -210,6 +231,27 @@ nav .container {
     cursor: pointer;
 }
 
+#gallery .btn-all{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#gallery .btn-active{
+    opacity: 0.8;
+}
+
+#gallery .btn{
+    color: var(--body-background-color);
+    background-color: var(--nav-color);
+    border-color: var(--body-background-color);
+}
+
+#gallery .btn:hover{
+    color: var(--nav-color);
+    background-color: var(--body-background-color);
+    border-color: var(--nav-color);
+}
+
 #gallery img:hover{
     transition: 0.3s ease-in-out;
     transform: scale(1.05);
@@ -287,7 +329,7 @@ nav .container {
     right: 20px; 
     opacity: 0.75; 
     background-color: var(--nav-color); 
-    color: #ffff; 
+    color: var(--body-background-color); 
     border: 1px solid #ffff; 
     border-radius: 50%; 
     width: 50px;
@@ -304,7 +346,7 @@ nav .container {
     opacity: 1; 
     text-decoration: none;
     background-color: var(--nav-color);
-    color: #ffff; 
+    color: var(--body-background-color);
 }
 
 /* Footer  */
@@ -317,10 +359,11 @@ nav .container {
     margin: 0px;
     font-size:medium;
     text-align: center;
+    color: var(--body-background-color);
 }
 
 #footer a {
-    color: var(--footer-text-color);
+    color: var(--body-background-color);
     font-size: larger;
     transition: 0.3s ease-in-out;
 }
