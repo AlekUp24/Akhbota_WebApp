@@ -120,9 +120,10 @@ nav .container {
 
 /* Kennel */
 
+
 #kennel {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: var(--div-size);
 }
@@ -130,30 +131,21 @@ nav .container {
 #kennel img{
     border-radius: 5%;
     max-width: 380px;
-    height: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 200px;
     transition: 0.3s ease-in-out;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin: 10px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 #kennel img:hover{
-    border-radius: 15%;
-    opacity: 0.4;
+    opacity: 1;
+    padding-left: 20px;
+
     transition: 0.3s ease-in-out;
 }
 
-.toggled-opacity {
-    opacity: 0.4;
-}
-
-.breed-details {
-    display: grid;
-    width: 90%;
-    text-align: justify;
-    font-size: large;
-}
 
 
 /* Why-Us */

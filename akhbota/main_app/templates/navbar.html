@@ -10,11 +10,11 @@
             <li class="nav-item my-nav-item dropdown mx-1">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang-key="nav_hodowla">Hodowla</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{% url 'pups' %}" data-lang-key="nav_hodowla_1">Szczenięta</a></li>
-                    <li><a class="dropdown-item" href="{% url 'bolognese' %}" data-lang-key="nav_hodowla_2">Bolończyk</a></li>
-                    <li><a class="dropdown-item" href="{% url 'russian_colorful_bolognese' %}" data-lang-key="nav_hodowla_3">Rosyjska Bolonka Kolorowa</a></li>
+                    {% for breed in breeds %}
+                      <li><a class="dropdown-item" href="{% url 'kennel' breed.breed %}">{{breed.breed}}</a></li>
+                    {% endfor %}
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="{% url 'kennel' %}" data-lang-key="nav_nasze_psy">Nasze Psy</a></li>
+                    <li><a class="dropdown-item" href="{% url 'kennel' 'all' %}" data-lang-key="nav_nasze_psy">Nasze Psy</a></li>
                 </ul>
             </li>
             <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'gallery' 'all' %}" data-lang-key="nav_gallery">Galeria</a></li>

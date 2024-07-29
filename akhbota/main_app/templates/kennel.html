@@ -4,10 +4,80 @@
 
 {% block content %}
 
-<!-- Bolończyk -->
-<div id="gallery" class="container rounded shadow p-3 mb-5 mt-5">
+<!-- Kennel -->
+<div id="kennel" class="container rounded shadow p-3 mb-5 mt-5">
     <div class="row col-12 text-center mb-4">
-        <p class="display-6" data-lang-key="nav_nasze_psy">Nasze Psy</p>
+
+        <p class="display-6">{{title}}</p>
+        <p class="mx-auto">{{description}}</p>
+
+        <center>  
+            {% for dog in dogs %}
+                {% if dog.image1 and dog.image2 %}
+                    <div class="card mb-3 text-start px-5">
+                        <div class="row mt-3">
+                            <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
+                            <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="row">
+                            <div class="card-body">
+                                <h5 class="card-title">{{dog.name}}</h5>
+                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
+                                <p class="card-text">{{dog.description}}</p>
+                                <p class="card-text">{{dog.birth_date}}</p>
+                                <p class="card-text">{{dog.awards}}</p>
+                                <p class="card-text">{{item.medical}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% elif dog.image1 %}
+                    <div class="card mb-3 text-start px-5">
+                        <div class="row mt-3">
+                            <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="row">
+                            <div class="card-body">
+                                <h5 class="card-title">{{dog.name}}</h5>
+                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
+                                <p class="card-text">{{dog.description}}</p>
+                                <p class="card-text">{{dog.birth_date}}</p>
+                                <p class="card-text">{{dog.awards}}</p>
+                                <p class="card-text">{{item.medical}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% elif dog.image2 %}
+                    <div class="card mb-3 text-start px-5">
+                        <div class="row mt-3">
+                            <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="row">
+                            <div class="card-body">
+                                <h5 class="card-title">{{dog.name}}</h5>
+                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
+                                <p class="card-text">{{dog.description}}</p>
+                                <p class="card-text">{{dog.birth_date}}</p>
+                                <p class="card-text">{{dog.awards}}</p>
+                                <p class="card-text">{{item.medical}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="card mb-3 text-start px-5">
+                        <div class="row mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">{{dog.name}}</h5>
+                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
+                                <p class="card-text">{{dog.description}}</p>
+                                <p class="card-text">{{dog.birth_date}}</p>
+                                <p class="card-text">{{dog.awards}}</p>
+                                <p class="card-text">{{item.medical}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+              {% endfor %}
+            </center>
     </div> 
 </div>
 

@@ -2,21 +2,16 @@ from django.db import models
 
 # Create your models here.
 
-# Rasy psów jako kategorie - dodawac
-
-# Psy z Foregin Key na rasy zeby potem filtrowac i dopisywac do katgorii
-#   kazdy pises ma miec Imię i Opis psa: (Data Urodzenia, Tytuły, Badania) oraz dwa zdjecia.
-
-
 class Dog_Breed(models.Model):
-    breed_name = models.CharField(max_length=50, blank=False)
+    breed = models.CharField(max_length=50, blank=False)
+    description = models.CharField(max_length=10000, blank=True)
 
     class Meta:
         verbose_name = "Rasy"
         verbose_name_plural = "Rasy"
     
     def __str__(self):
-        return f"{self.breed_name}"
+        return f"{self.breed}"
 
 class Dog(models.Model):
     name = models.CharField(max_length=100, blank=False)
