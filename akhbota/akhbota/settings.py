@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-lelp*qtj0t72!*997ed#48hr_o8=ld%os4ry^q$76_rdh_p8h(
 DEBUG = True
 
 ALLOWED_HOSTS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://akhbotawebapp-production.up.railway.app']
 
 # Application definition
 
