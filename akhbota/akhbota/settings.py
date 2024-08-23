@@ -1,10 +1,13 @@
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Load environmental variables
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -16,7 +19,7 @@ SECRET_KEY = 'django-insecure-lelp*qtj0t72!*997ed#48hr_o8=ld%os4ry^q$76_rdh_p8h(
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CSRF_TRUSTED_ORIGINS = []
 
 # Application definition
 
@@ -30,6 +33,7 @@ INSTALLED_APPS = [
     'main_app',
     'blog',
     'kennel',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -40,6 +44,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'akhbota.urls'
@@ -68,9 +73,15 @@ WSGI_APPLICATION = 'akhbota.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': os.environ.get('DB_PASSWORD_AKHBOTA'),
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '10172',
+       }
 }
 
 
@@ -110,6 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+#STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# whitenoise static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = 'media/'
