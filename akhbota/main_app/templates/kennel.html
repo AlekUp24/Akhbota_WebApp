@@ -13,73 +13,30 @@
 
         <center>  
             {% for dog in dogs %}
-                {% if dog.image1 and dog.image2 %}
                     <div class="card mb-3 text-start px-5">
                         <div class="row mt-3">
-                            <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
-                            <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
+                            {% if dog.image1 and dog.image2 %}
+                                <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
+                                <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
+                            {% elif dog.image1 %}
+                                <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
+                            {% elif dog.image2 %}
+                                <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
+                            {% else %}
+                            {% endif %}
                         </div>
                         <div class="row">
                             <div class="card-body">
                                 <h5 class="card-title">{{dog.name}}</h5>
                                 <p class="card-text"><strong>{{dog.breed}}</strong></p>
-                                <p class="card-text">{{dog.sex}}</p>
-                                <p class="card-text">{{dog.description}}</p>
-                                <p class="card-text">{{dog.birth_date}}</p>
-                                <p class="card-text">{{dog.awards}}</p>
-                                <p class="card-text">{{dog.medical}}</p>
+                                <p class="card-text">Płeć:&nbsp;&nbsp;&nbsp;{{dog.sex}}</p>
+                                <p class="card-text">Dodatkowe informacje:&nbsp;&nbsp;&nbsp;{{dog.description}}</p>
+                                <p class="card-text">Data urodzenia:&nbsp;&nbsp;&nbsp;{{dog.birth_date}}</p>
+                                <p class="card-text">Nagrody:&nbsp;&nbsp;&nbsp;{{dog.awards}}</p>
+                                <p class="card-text">Zdrowie:&nbsp;&nbsp;&nbsp;{{dog.medical}}</p>
                             </div>
                         </div>
                     </div>
-                {% elif dog.image1 %}
-                    <div class="card mb-3 text-start px-5">
-                        <div class="row mt-3">
-                            <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                                <h5 class="card-title">{{dog.name}}</h5>
-                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
-                                <p class="card-text">{{dog.sex}}</p>
-                                <p class="card-text">{{dog.description}}</p>
-                                <p class="card-text">{{dog.birth_date}}</p>
-                                <p class="card-text">{{dog.awards}}</p>
-                                <p class="card-text">{{dog.medical}}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% elif dog.image2 %}
-                    <div class="card mb-3 text-start px-5">
-                        <div class="row mt-3">
-                            <img src="{{dog.image2.url}}" class="img-fluid rounded-start " alt="...">
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                                <h5 class="card-title">{{dog.name}}</h5>
-                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
-                                <p class="card-text">{{dog.sex}}</p>
-                                <p class="card-text">{{dog.description}}</p>
-                                <p class="card-text">{{dog.birth_date}}</p>
-                                <p class="card-text">{{dog.awards}}</p>
-                                <p class="card-text">{{dog.medical}}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="card mb-3 text-start px-5">
-                        <div class="row mt-3">
-                            <div class="card-body">
-                                <h5 class="card-title">{{dog.name}}</h5>
-                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
-                                <p class="card-text">{{dog.sex}}</p>
-                                <p class="card-text">{{dog.description}}</p>
-                                <p class="card-text">{{dog.birth_date}}</p>
-                                <p class="card-text">{{dog.awards}}</p>
-                                <p class="card-text">{{dog.medical}}</p>
-                            </div>
-                        </div>
-                    </div>
-                {% endif %}
               {% endfor %}
             </center>
     </div> 

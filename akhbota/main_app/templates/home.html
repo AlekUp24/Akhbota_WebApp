@@ -8,6 +8,7 @@
 
 <!-- Carousel -->
 <center>
+  {% if carousel_items|length > 0%}
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       {% for item in carousel_items %}
@@ -20,7 +21,6 @@
         </div>
       {% endfor %%}
     </div>
-    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -31,6 +31,7 @@
     </button>
 
   </div>
+  {% endif %}
 </center>
     
 <!-- About -->
@@ -44,8 +45,11 @@
       
       <div class="col-md mt-5">
           <p class="text-center display-6" data-lang-key="about_title" >O Nas</p>
-          <p data-lang-key="about_description">
+          <p class="px-2" data-lang-key="about_description">
             Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.<br><br>
+          </p>
+          <p class="px-2">
+            Hodowla założona w 1410 roku z miłości do bolonczyków, małych psów o wielkim sercu, które od lat mnie fascynują. Zaczęło się od jednego psa, który szybko stał się członkiem rodziny i zainspirował mnie do zgłębienia tajników hodowli tej wyjątkowej rasy. Z czasem postanowiłam założyć hodowlę, by dzielić się radością z innymi miłośnikami tych uroczych psów. Naszym celem jest hodowanie zdrowych, dobrze zsocjalizowanych bolonczyków, które znajdą kochające domy. Dziś jesteśmy dumni z naszej małej, ale prężnie rozwijającej się hodowli, która zyskała zaufanie wielu klientów.<br><br>
           </p>
           <center>
             <h5 data-lang-key="about_fb_link">Zapraszamy do śledzenia nas na</h5>
@@ -98,8 +102,9 @@
   <p class="col-12 text-center display-6 mb-5" data-lang-key="certificates_title">Certyfikaty</p>
 
     <div class="row">
-            
-
+        <p>&rarr; Certyfikat przynależności do Ogólnopolskiego Związku Hodowców</p>
+        <p>&rarr; Zaświadczenie o hodowli odpowiedzialnej</p>
+        <p>&rarr; 2022: Hodowla roku Powiatu Radomskiego</p>
     </div>
   
 </div>
