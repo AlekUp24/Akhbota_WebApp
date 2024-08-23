@@ -14,9 +14,16 @@ class Dog_Breed(models.Model):
         return f"{self.breed}"
 
 class Dog(models.Model):
+
+    CATEGORY_CHOICES = [
+    ('pies', 'Pies'),
+    ('suka', 'Suka'),
+    ]
+
     name = models.CharField(max_length=100, blank=False)
     description = models.CharField(max_length=10000, blank=True)
     breed = models.ForeignKey(Dog_Breed, on_delete=models.CASCADE, blank=False)
+    sex =  models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='pies')
     birth_date = models.DateField()
     awards = models.CharField(max_length=10000, blank=True)
     medical = models.CharField(max_length=10000, blank=True)
