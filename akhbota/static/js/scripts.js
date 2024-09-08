@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', () => {
       certificates_title: "Nagrody i Certyfikaty",
 
       nav_about: "O nas",
-      nav_hodowla: "Hodowla",
+      nav_hodowla: "Nasze Psy",
       nav_hodowla_1: "Szczenięta",
       nav_hodowla_2: "Bolończyk",
       nav_hodowla_3: "Rosyjska Bolonka Kolorowa",
-      nav_nasze_psy: "Nasze Psy",
+      nav_nasze_psy: "Wszyscy Podopieczni",
       nav_gallery: "Galeria",
-      nav_blog: "Aktualności",
+      nav_blog: "Blog",
       nav_contact: "Kontakt",
 
       hodowla_description_1: "Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.",
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_hodowla_3: "Russian Colorful Bolognese",
       nav_nasze_psy: "Our Dogs",
       nav_gallery: "Gallery",
-      nav_blog: "News",
+      nav_blog: "Blog",
       nav_contact: "Contact",
 
       hodowla_description_1: "A puppy is a young dog. Some puppies can weigh 1-1.5 kg, while larger ones can weigh up to 7-11 kg. All puppies show primary variability, and healthy puppies grow rapidly after birth.",
