@@ -1,24 +1,24 @@
 <!-- Navbar -->
-<nav id="nav" class="navbar navbar-dark navbar-expand-lg my-navbar-color pt-3 pb-3">
+<nav id="nav" class="navbar navbar-dark navbar-expand-lg my-navbar-color pt-3 pb-3 sticky-top">
     <div class="container px-4 px-lg-5 d-flex justify-content-between">
-      <a class="mb-0 h3 text-decoration-none logo" style="font-size:xx-large;" href="{% url 'home' %}"><i class="bi bi-subscript"></i>  Akhbota</a>
+      <a class="mb-0 h3 text-decoration-none logo" style="font-size:large;" href="{% url 'home' %}">AKHBOTA FCI BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             
         <ul class="navbar-nav ms-lg-4">
             <li class="nav-item my-nav-item mx-1"><a class="nav-link" aria-current="page" href="{% url 'home' %}#about" data-lang-key="nav_about">O nas</a></li>
             <li class="nav-item my-nav-item dropdown mx-1">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang-key="nav_hodowla">Hodowla</a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang-key="nav_hodowla">Nasze Psy</a>
                 <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                     {% for breed in breeds %}
                       <li><a class="dropdown-item" href="{% url 'kennel' breed.breed %}">{{breed.breed}}</a></li>
                     {% endfor %}
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="{% url 'kennel' 'all' %}" data-lang-key="nav_nasze_psy">Nasze Psy</a></li>
+                    <li><a class="dropdown-item" href="{% url 'kennel' 'all' %}" data-lang-key="nav_nasze_psy">Wszyscy podopieczni</a></li>
                 </ul>
             </li>
             <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'gallery' 'all' %}" data-lang-key="nav_gallery">Galeria</a></li>
-            <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'blog' %}" data-lang-key="nav_blog">Aktualności</a></li>
+            <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'blog' %}" data-lang-key="nav_blog">Blog</a></li>
             <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'home' %}#contact" data-lang-key="nav_contact">Kontakt</a></li>
             <li class="nav-item mx-3"><button class="toggle-button-translate btn btn-outline-light" onclick="toggleLanguage()">EN</button></li>
         </ul>

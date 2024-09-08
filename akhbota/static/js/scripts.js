@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleButton: "EN",
 
       about_title: "O Nas",
-      about_description: "Witamy na stronie hodowli psów rasy maltańczyk i bolończyk- Akhbota zarejestrowanej w Związku Kynologicznym w Polsce i Międzynarodowej Organizacji Kynologicznej FCI.",
+      about_description: "HODOWLA PSÓW RASY BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA ZAREJESTROWANA W ZWIĄZKU KYNOLOGICZNYM W POLSCE ORAZ W MIĘDZYNARODOWEJ ORGANIZACJI KYNOLOGICZNEJ (FCI).",
       about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
