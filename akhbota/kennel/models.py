@@ -36,3 +36,15 @@ class Dog(models.Model):
     
     def __str__(self):
         return f"{self.name} - {self.breed} - {self.birth_date}"
+
+class Puppies(models.Model):
+    name = models.CharField(max_length=200, blank=False)
+    description = models.CharField(max_length=10000, blank=True)
+    image1 = models.ImageField(upload_to='uploads/puppies/', blank=True)
+
+    class Meta:
+        verbose_name = "Szczenięta"
+        verbose_name_plural = "Szczenięta"
+
+    def __str__(self):
+        return f"{self.name}"

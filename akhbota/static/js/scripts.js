@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_hodowla_2: "Bolończyk",
       nav_hodowla_3: "Rosyjska Bolonka Kolorowa",
       nav_nasze_psy: "Wszyscy Podopieczni",
+      nav_puppies: "Szczenięta",
       nav_gallery: "Galeria",
       nav_blog: "Blog",
       nav_contact: "Kontakt",
@@ -176,10 +177,11 @@ document.addEventListener('DOMContentLoaded', () => {
       
       nav_about: "About Us",
       nav_hodowla: "Kennel",
-      nav_hodowla_1: "Pups",
+      nav_hodowla_1: "Puppies",
       nav_hodowla_2: "Bolognese",
       nav_hodowla_3: "Russian Colorful Bolognese",
       nav_nasze_psy: "Our Dogs",
+      nav_puppies: "Puppies",
       nav_gallery: "Gallery",
       nav_blog: "Blog",
       nav_contact: "Contact",
@@ -212,6 +214,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update the button text
     document.querySelector('.toggle-button-translate').textContent = translations[currentLanguage].toggleButton;
+
+    const blogButton = document.getElementById('blog_button');
+    if (currentLanguage === 'en') {
+      blogButton.style.display = 'none'; // Hide the button in EN
+    } else {
+      blogButton.style.display = 'block'; // Show the button in PL
+    }
   }
 
   // Run a function on start

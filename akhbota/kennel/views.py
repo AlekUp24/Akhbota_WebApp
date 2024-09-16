@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Dog_Breed,Dog
+from .models import Dog_Breed,Dog,Puppies
 # Create your views here.
 
 
@@ -19,3 +19,10 @@ def kennel(request,breed):
         dogs = Dog.objects.filter(breed=this_breed)
 
         return render(request, 'kennel.html', {'dogs': dogs, 'title':this_breed.breed, 'description':this_breed.description, 'breeds':breeds} )
+    
+
+def puppies(request):
+
+    puppies = Puppies.objects.all()
+
+    return render(request, 'puppies.html', {'puppies': puppies})
