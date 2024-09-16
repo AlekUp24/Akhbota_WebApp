@@ -9,13 +9,13 @@
     <div class="row col-12 text-center mb-4">
         <p class="display-6" data-lang-key="gallery_title">Galeria</p>
       
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group rounded">
-            <a href={% url 'gallery' 'all' %} type="button" class="btn btn-all btn-secondary" value="all">Wszystkie</a>
+        <div class="btn-group flex-wrap" role="group" aria-label="Basic radio toggle button group rounded">
+            <a href={% url 'gallery' 'all' %} type="button" class="btn btn-all btn-secondary mb-2" value="all">Wszystkie</a>
             {% for value, display in choices %}
                 {% if curr_choice == value %}
-                    <a href={% url 'gallery' value %} type="button" class="btn-active btn btn-dark" value="{{ value }}">{{ display }}</a>
+                    <a href={% url 'gallery' value %} type="button" class="btn-active btn btn-dark mb-2" value="{{ value }}">{{ display }}</a>
                 {% else %}
-                    <a href={% url 'gallery' value %} type="button" class="btn btn-outline-dark" value="{{ value }}">{{ display }}</a>
+                    <a href={% url 'gallery' value %} type="button" class="btn btn-outline-dark mb-2" value="{{ value }}">{{ display }}</a>
                 {% endif %}
             {% endfor %}
         </div>
