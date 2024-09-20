@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       about_title: "O Nas",
       about_description: "HODOWLA PSÓW RASY BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA ZAREJESTROWANA W ZWIĄZKU KYNOLOGICZNYM W POLSCE ORAZ W MIĘDZYNARODOWEJ ORGANIZACJI KYNOLOGICZNEJ (FCI).",
+      about_description_2: "Nasze psy są członkami rodziny, towarzysząc nam w codziennym życiu.",
       about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
@@ -161,6 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
       badge_description_2: "Certyfikowana Hodowla",
       badge_description_3: "Nasze psy zdobyły wiele wyróżnień",
       badge_description_4: "Dbamy o regularną kontrolę zdrowia naszych psów",
+
+      cookies: "Ta strona używa plików cookies w celu zapewnienia lepszej jakości usług. Korzystając ze strony, zgadzasz się na użycie plików cookies.",
     
     },
     
@@ -168,7 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleButton: "PL",
 
       about_title: "About Us",
-      about_description: "Welcome to the website of the breeding of Maltese and Bolognese dogs - Akhbota registered to the Cynological Association in Poland and the International Cynological Organization FCI.",
+      about_description: "Bolognese and Russkaya Tsvetnaya Bolonka dog breed registered in The Polish Kennel Club and The Federation Cynologique Internationale (FCI).",
+      about_description_2: "Our dogs accompany us in daily life as part of our family.",
       about_fb_link: "Make sure to follow us:",
       contact_title: "Contact us:",
       gallery_title: "Gallery",
@@ -194,6 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
       badge_description_2: "Certified Kennel",
       badge_description_3: "Our dogs have won many awards",
       badge_description_4: "We ensure regular health checks for our dogs",
+
+      cookies: "This site uses cookies to provide better quality services. By using the site, you agree to the use of cookies.",
 
     },
 
