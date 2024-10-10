@@ -11,7 +11,7 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-lang-key="nav_hodowla">Nasze Psy</a>
                 <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                     {% for breed in breeds %}
-                      <li><a class="dropdown-item" href="{% url 'kennel' breed.breed %}">{{breed.breed}}</a></li>
+                      <li><a class="dropdown-item" href="{% url 'kennel' breed.breed %}" data-lang-key="{{ breed.breed }}">{{breed.breed}}</a></li>
                     {% endfor %}
                     <li><hr class="dropdown-divider" /></li>
                     <li><a class="dropdown-item" href="{% url 'kennel' 'all' %}" data-lang-key="nav_nasze_psy">Wszyscy podopieczni</a></li>

@@ -162,6 +162,16 @@ document.addEventListener('DOMContentLoaded', () => {
       badge_description_2: "Certyfikowana Hodowla",
       badge_description_3: "Nasze psy zdobyły wiele wyróżnień",
       badge_description_4: "Dbamy o regularną kontrolę zdrowia naszych psów",
+      
+      // navbar
+      Bolończyk: "Bolończyk",
+      "Rosyjska Bolonka Kolorowa": "Rosyjska Bolonka Kolorowa",
+
+      // gallery
+      all: "Wszystkie",
+      wystawy: "Wystawy",
+      codzienne: "Życie Codzienne",
+      szczenieta: "Szczenięta",
 
       cookies: "Ta strona używa plików cookies w celu zapewnienia lepszej jakości usług. Korzystając ze strony, zgadzasz się na użycie plików cookies.",
     
@@ -198,6 +208,16 @@ document.addEventListener('DOMContentLoaded', () => {
       badge_description_2: "Certified Kennel",
       badge_description_3: "Our dogs have won many awards",
       badge_description_4: "We ensure regular health checks for our dogs",
+      
+      // navbar
+      Bolończyk: "Bolognese",
+      "Rosyjska Bolonka Kolorowa": "Russian Colorful Bolognese",
+
+      // gallery
+      all: "All",
+      wystawy: "Shows",
+      codzienne: "Everyday Life",
+      szczenieta: "Puppies",
 
       cookies: "This site uses cookies to provide better quality services. By using the site, you agree to the use of cookies.",
 
@@ -207,30 +227,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  let currentLanguage = 'pl';
+let currentLanguage = localStorage.getItem('language') || 'pl'; // Pobierz język z localStorage lub ustaw domyślnie 'pl'
 
-  function toggleLanguage() {
-    currentLanguage = currentLanguage === 'pl' ? 'en' : 'pl';
-    const elements = document.querySelectorAll('[data-lang-key]');
-    
-    elements.forEach(element => {
-      const key = element.getAttribute('data-lang-key');
-      element.textContent = translations[currentLanguage][key];
-    });
-
-    // Update the button text
-    document.querySelector('.toggle-button-translate').textContent = translations[currentLanguage].toggleButton;
-
-    const blogButton = document.getElementById('blog_button');
-    if (currentLanguage === 'en') {
-      blogButton.style.display = 'none'; // Hide the button in EN
-    } else {
-      blogButton.style.display = 'block'; // Show the button in PL
-    }
-  }
-
-  // Run a function on start
-  document.addEventListener('DOMContentLoaded', () => {
-    toggleLanguage('en');
-    toggleLanguage('pl'); // Optional: Call toggleLanguage if you want to switch language on load
+function applyLanguage(language) {
+  const elements = document.querySelectorAll('[data-lang-key]');
+  
+  elements.forEach(element => {
+    const key = element.getAttribute('data-lang-key');
+    element.textContent = translations[language][key];
   });
+
+  // Aktualizuj tekst przycisku
+  document.querySelector('.toggle-button-translate').textContent = translations[language].toggleButton;
+
+  // Ukryj przycisk bloga, jeśli język to 'en'
+  const blogButton = document.getElementById('blog_button');
+  if (language === 'en') {
+    blogButton.style.display = 'none'; // Ukryj przycisk w EN
+  } else {
+    blogButton.style.display = 'block'; // Pokaż przycisk w PL
+  }
+}
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === 'pl' ? 'en' : 'pl'; // Przełącz na drugi język
+  localStorage.setItem('language', currentLanguage); // Zapisz aktualny język w localStorage
+  applyLanguage(currentLanguage); // Zastosuj tłumaczenie do strony
+}
+
+// Uruchom funkcję po załadowaniu strony
+document.addEventListener('DOMContentLoaded', () => {
+  applyLanguage(currentLanguage); // Zastosuj język na podstawie zapisanego w localStorage
+});
+
+// Obsługa zdarzenia kliknięcia przycisku zmiany języka
+document.querySelector('.toggle-button-translate').addEventListener('click', toggleLanguage);
