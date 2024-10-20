@@ -18,8 +18,8 @@ SECRET_KEY = 'django-insecure-lelp*qtj0t72!*997ed#48hr_o8=ld%os4ry^q$76_rdh_p8h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://akhbotawebapp-production.up.railway.app']
+ALLOWED_HOSTS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app']
 
 # Application definition
 
@@ -73,14 +73,14 @@ WSGI_APPLICATION = 'akhbota.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'railway',
-        #'USER': 'postgres',
-        #'PASSWORD': os.environ['DB_PASSWORD_AKHBOTA'],
-        #'HOST': 'autorack.proxy.rlwy.net',
-        #'PORT': '10172',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': os.environ.get('DB_PASSWORD_AKHBOTA'),
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '35182',
        }
 }
 

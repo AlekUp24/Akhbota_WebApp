@@ -11,15 +11,15 @@
         <!-- title translation -->
         {% if title|slice:":4" == "Bolo" %}
             <p class="display-6" data-lang-key="nav_hodowla_2">Bolończyk</p>
-        {% elif title|slice:":8" == "Rosyjska" %}
+        {% elif title|slice:":4" == "Rosy" %}
             <p class="display-6" data-lang-key="nav_hodowla_3">Rosyjska Bolonka Kolorowa</p>
         {% endif %}
 
         <!-- description translation -->
         {% if title|slice:":4" == "Bolo" %}
             <p class="mx-auto px-5" data-lang-key="hodowla_description_2"></p>
-        {% elif title|slice:":8" == "Rosyjska" %}
-            <p class="mx-auto px-5" data-lang-key="hodowla_description_2"></p>
+        {% elif title|slice:":4" == "Rosy" %}
+            <p class="mx-auto px-5" data-lang-key="hodowla_description_3"></p>
         {% endif %}
 
         <center>  
