@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Carousel_Items, Gellery_Items
+from .models import Carousel_Items, Gellery_Items, Puppies
 from kennel.models import Dog_Breed
 from django.http import JsonResponse
 # Create your views here.
@@ -25,3 +25,12 @@ def gallery(request, cat):
         choices = Gellery_Items.CATEGORY_CHOICES
 
         return render(request, 'gallery.html', {'gallery_items':gallery_items , 'choices':choices , 'curr_choice': cat, 'breeds':breeds})
+
+
+def puppies(request):
+    
+    puppies = Puppies.objects.all()[:1]
+
+    print(len(puppies))
+
+    return render(request, 'puppies.html' , {'puppies':puppies})

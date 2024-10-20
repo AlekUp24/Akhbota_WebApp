@@ -11,35 +11,41 @@
         <p class="display-6" data-lang-key="nav_puppies">Sczenięta</p>
 
         <center>  
-            {% for pupp in puppies %}
-              {% if pupp.image1 %}
-                <div class="card mb-3 text-start">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="{{pupp.image1.url}}" class="img-fluid rounded-start" alt="..." style="width: 90%; height: 90%; object-fit: cover;">
-                      </div>
-                      <div class="col-md-8 px-5">
-                        <div class="card-body">
-                          <h5 class="card-title">{{pupp.name}}</h5>
-                          <p class="card-text">{{pupp.description}}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {% else %}
-                  <div class="card mb-3 text-start">
-                    <div class="row g-0">
-                      <div class="col-md-12 px-5">
-                        <div class="card-body">
-                            <h5 class="card-title">{{pupp.name}}</h5>
-                            <p class="card-text">{{pupp.description}}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {% endif %}
-            {% endfor %}
+            <div class="card mb-3 px-5">
+                <div class="row mt-3">
+                    <div class="card-body">
+                        {% for item in puppies %}
+                            <h5 class="card-title" data-lang-key="puppies_title"></h5>
+                            <span class="card-text" data-lang-key="puppies_article"></span>
+                                
+                                {% if item.period|slice:":2" == "je" %}
+                                    <span data-lang-key="autumn"></span>
+                                {% elif item.period|slice:":2" == "zi" %}
+                                    <span data-lang-key="autumn"></span>
+                                {% elif item.period|slice:":2" == "wi" %}
+                                    <span data-lang-key="autumn"></span>
+                                {% elif item.period|slice:":2" == "la" %}
+                                    <span data-lang-key="autumn"></span>
+                                {% endif %}
+                                
+                            <span>{{item.year}}.</span>
 
+                            <img src="{{item.image.url}}" class="img-fluid rounded-start  mt-3" alt="...">
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md mt-5 mx-4">
+                <p class="text-center display-6" data-lang-key="puppies_question" >Czego oczekujemy od Ciebie, jeśli kupisz od nas szczeniaczka?</p>
+                <p class="px-2" data-lang-key="puppies_text" >
+                    Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo.
+                    To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe!
+                    Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie najlepsze szczenię do tego celu.
+                    Czy wiesz, co łączy wszystkie nasze szczenięta?
+                    Uwielbiają spędzać z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem.
+                </p>
+            </div>
         </center>
     </div> 
 </div>

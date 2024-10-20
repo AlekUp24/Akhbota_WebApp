@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import admin
-from .models import Dog, Dog_Breed, Puppies
+from .models import Dog, Dog_Breed
 
 # Register your models here.
 
@@ -34,19 +34,4 @@ class DogBreedForm(forms.ModelForm):
 @admin.register(Dog_Breed)
 class DogBreedAdmin(admin.ModelAdmin):
     form = DogBreedForm
-
-
-# Create a custom form
-class PuppiesForm(forms.ModelForm):
-    class Meta:
-        model = Puppies
-        fields = '__all__'
-        widgets = {
-            'description': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
-        }
-
-# Register the form with the model admin
-@admin.register(Puppies)
-class PuppiesAdmin(admin.ModelAdmin):
-    form = PuppiesForm
 

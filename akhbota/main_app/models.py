@@ -33,4 +33,36 @@ class Gellery_Items(models.Model):
     def __str__(self):
         return f"{self.title} - Kategoria: {self.category} - Dodano: {self.add_date}"
     
+class Puppies(models.Model):
 
+    Period_CHOICES = [
+    ('jesień', 'Jesień'),
+    ('zima', 'Zima'),
+    ('wiosna', 'Wiosna'),
+    ('lato', 'Lato'),
+    ]
+
+    Year_CHOICES = [
+    ('2024', '2024'),
+    ('2025', '2025'),
+    ('2026', '2026'),
+    ('2027', '2027'),
+    ('2028', '2028'),
+    ('2029', '2029'),
+    ('2030', '2030'),
+    ('2031', '2031'),
+    ('2032', '2032'),
+    ('2033', '2033'),
+    ('2034', '2034'),
+    ]
+        
+    period = models.CharField(max_length=20, choices=Period_CHOICES, default='jesień')
+    year = models.CharField(max_length=20, choices=Year_CHOICES, default='2024')
+    image = models.ImageField(upload_to='uploads/puppies/', blank=True)
+
+    class Meta:
+        verbose_name = "Elementy Szczeniąt"
+        verbose_name_plural = "Elementy Szczeniąt"
+    
+    def __str__(self):
+        return f"{self.period} {self.year}"

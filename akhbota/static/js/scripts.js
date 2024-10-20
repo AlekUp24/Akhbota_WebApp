@@ -173,6 +173,25 @@ document.addEventListener('DOMContentLoaded', () => {
       codzienne: "Życie Codzienne",
       szczenieta: "Szczenięta",
 
+      // kennel
+      sex_info: "Płeć:",
+      additional_info: "Dodatkowe informacje:",
+      date_of_birth_info: "Data urodzenia:",
+      awards_info: "Nagrody:",
+      health_info: "Zdrowie:",  
+
+      // puppies
+      puppies_title: "Nowy miot",
+      puppies_article: "Oczekujemy szczeniąt rasy Bolończyk i Rosyjska Bolonka Kolorowa w okresie ",
+      puppies_question:"Czego oczekujemy od Ciebie, jeśli kupisz od nas szczeniaczka?",
+      puppies_text:"Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo. To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe! Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie najlepsze szczenię do tego celu. Czy wiesz, co łączy wszystkie nasze szczenięta? Uwielbiają spędzać z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem.",
+
+      // year periods
+      autumn: " jesień ",
+      winter: " zima ",
+      spring: " wiosna ",
+      summer: " lato ",
+
       cookies: "Ta strona używa plików cookies w celu zapewnienia lepszej jakości usług. Korzystając ze strony, zgadzasz się na użycie plików cookies.",
     
     },
@@ -203,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hodowla_description_1: "A puppy is a young dog. Some puppies can weigh 1-1.5 kg, while larger ones can weigh up to 7-11 kg. All puppies show primary variability, and healthy puppies grow rapidly after birth.",
       hodowla_description_2: "The Bolognese is one of the dog breeds belonging to the group of companion dogs, classified into the bichon and related breeds section. Fox-like type. Not subject to work tests.",
       hodowla_description_3: "The Russian Tsvetnaya Bolonka, also known as Bolonka Zwetna in Germany or known simply as Bolonka, is a rare Bichon-type toy breed developed in Moscow and Saint Petersburg, Russia, from ancestors of smaller dogs such as the Bichon Frize, Toy Poodle, Shih Tzu, Pekingese and French Bolognese.",
-      
+            
       badge_description_1: "Show dogs",
       badge_description_2: "Certified Kennel",
       badge_description_3: "Our dogs have won many awards",
@@ -219,6 +238,26 @@ document.addEventListener('DOMContentLoaded', () => {
       codzienne: "Everyday Life",
       szczenieta: "Puppies",
 
+      // kennel
+      sex_info: "Sex:",
+      additional_info: "Additional information:",
+      date_of_birth_info: "Date of birth:",
+      awards_info: "Awards:",
+      health_info: "Health:",
+
+      // puppies
+      puppies_title: "New litter",
+      puppies_article: "We are expecting Bolognese and Russian Colored Bolonka puppies during the period of",
+      puppies_question:"What do we expect from you if you buy a puppy from us?",
+      puppies_text:"We expect you to find a lifelong companion whom you'll love unconditionally. Just because we enjoy showing our dogs doesn’t mean we expect you to share the same interest. What matters most to us is that our puppies have wonderful homes! Dog shows aren’t for every owner, nor for every dog. But if you are interested in them, let us know, and we’ll do our best to find the perfect puppy for you. Do you know what all our puppies have in common? They love spending time with you, whether it's in the garden or on the couch in front of the TV.",
+
+      // year periods
+      autumn: " autumn ",
+      winter: " winter ",
+      spring: " spring ",
+      summer: " summer ",
+
+      
       cookies: "This site uses cookies to provide better quality services. By using the site, you agree to the use of cookies.",
 
     },
