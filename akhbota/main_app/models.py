@@ -71,4 +71,4 @@ class Puppies(models.Model):
         verbose_name_plural = "Elementy Szczeniąt"
     
     def __str__(self):
-        return f"{self.period} {self.year}"
+        return f"Nowy miot: {self.rasa} - {self.period} {self.year}"
