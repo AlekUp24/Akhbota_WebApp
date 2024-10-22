@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="card-body">
-                                <h5 class="card-title">{{dog.name}}</h5>
+                                <h5 class="card-title">{{dog.name}} {{dog.awards}}</h5>
                                 <p class="card-text"><strong>{{dog.breed}}</strong></p>
 
                                 <p class="card-text">
@@ -46,21 +46,20 @@
                                 </p>
                                 
                                 <p class="card-text">
-                                    <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description}}
-                                </p>
-                                
-                                <p class="card-text">
                                     <strong data-lang-key="date_of_birth_info">Data urodzenia:</strong>&nbsp;&nbsp;&nbsp;{{dog.birth_date}}
                                 </p>
                                 
                                 <p class="card-text">
-                                    <strong data-lang-key="awards_info">Nagrody:</strong>&nbsp;&nbsp;&nbsp;{{dog.awards}}
+                                    <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description}}
                                 </p>
+                                
+                                <!-- hide from the website as per Client request - 22/10/2024
                                 
                                 <p class="card-text">
                                     <strong data-lang-key="health_info">Zdrowie:</strong>&nbsp;&nbsp;&nbsp;{{dog.medical}}
                                 </p>
-
+                                
+                                -->
                             </div>
                         </div>
                     </div>

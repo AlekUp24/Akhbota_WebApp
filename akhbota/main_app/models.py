@@ -55,11 +55,17 @@ class Puppies(models.Model):
     ('2033', '2033'),
     ('2034', '2034'),
     ]
+
+    Breed_CHOICES = [
+    ('Bolończyk', 'Bolończyk'),
+    ('Rosyjska Bolonka Kolorowa', 'Rosyjska Bolonka Kolorowa'),
+    ]
         
     period = models.CharField(max_length=20, choices=Period_CHOICES, default='jesień')
     year = models.CharField(max_length=20, choices=Year_CHOICES, default='2024')
+    rasa = models.CharField(max_length=100, choices=Breed_CHOICES, default='Bolończyk')
     image = models.ImageField(upload_to='uploads/puppies/', blank=True)
-
+    
     class Meta:
         verbose_name = "Elementy Szczeniąt"
         verbose_name_plural = "Elementy Szczeniąt"

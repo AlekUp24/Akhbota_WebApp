@@ -182,7 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // puppies
       puppies_title: "Nowy miot",
-      puppies_article: "Oczekujemy szczeniąt rasy Bolończyk i Rosyjska Bolonka Kolorowa w okresie ",
+      puppies_article_1: "Oczekujemy szczeniąt rasy ",
+      puppies_article_2: " w okresie ",
       puppies_question:"Czego oczekujemy od Ciebie, jeśli kupisz od nas szczeniaczka?",
       puppies_text:"Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo. To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe! Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie najlepsze szczenię do tego celu. Czy wiesz, co łączy wszystkie nasze szczenięta? Uwielbiają spędzać z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem.",
 
@@ -247,7 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // puppies
       puppies_title: "New litter",
-      puppies_article: "We are expecting Bolognese and Russian Colored Bolonka puppies during the period of",
+      puppies_article_1: "We are expecting ",
+      puppies_article_2: " puppies during the period of ",
       puppies_question:"What do we expect from you if you buy a puppy from us?",
       puppies_text:"We expect you to find a lifelong companion whom you'll love unconditionally. Just because we enjoy showing our dogs doesn’t mean we expect you to share the same interest. What matters most to us is that our puppies have wonderful homes! Dog shows aren’t for every owner, nor for every dog. But if you are interested in them, let us know, and we’ll do our best to find the perfect puppy for you. Do you know what all our puppies have in common? They love spending time with you, whether it's in the garden or on the couch in front of the TV.",
 

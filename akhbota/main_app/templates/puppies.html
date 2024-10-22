@@ -16,7 +16,15 @@
                     <div class="card-body">
                         {% for item in puppies %}
                             <h5 class="card-title" data-lang-key="puppies_title"></h5>
-                            <span class="card-text" data-lang-key="puppies_article"></span>
+                            <span class="card-text" data-lang-key="puppies_article_1"></span>
+
+                                {% if item.rasa|slice:":4" == "Bolo" %}
+                                    <span data-lang-key="nav_hodowla_2">Bolończyk</span>
+                                {% elif item.rasa|slice:":4" == "Rosy" %}
+                                    <span data-lang-key="nav_hodowla_3">Rosyjska Bolonka Kolorowa</span>
+                                {% endif %}
+
+                            <span class="card-text" data-lang-key="puppies_article_2"></span>
                                 
                                 {% if item.period|slice:":2" == "je" %}
                                     <span data-lang-key="autumn"></span>

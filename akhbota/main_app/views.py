@@ -28,9 +28,9 @@ def gallery(request, cat):
 
 
 def puppies(request):
-    
-    puppies = Puppies.objects.all()[:1]
+    breeds = Dog_Breed.objects.all()
+    puppies = Puppies.objects.all()
 
     print(len(puppies))
 
-    return render(request, 'puppies.html' , {'puppies':puppies})
+    return render(request, 'puppies.html' , {'puppies':puppies, 'breeds':breeds})
