@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="card-body">
                                 <h5 class="card-title">{{dog.name}}<h5> 
-                                {% if dog.awards|length >0 %} 
+                                {% if dog.awards %} 
                                     <h6>{{dog.awards}}</h6>
                                 {% endif %}
                                 <p class="card-text"><strong>{{dog.breed}}</strong></p>
