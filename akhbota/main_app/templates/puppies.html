@@ -15,6 +15,7 @@
                 <div class="row mt-3">
                     <div class="card-body">
                         {% for item in puppies %}
+                            
                             <h5 class="card-title" data-lang-key="puppies_title"></h5>
                             <span class="card-text" data-lang-key="puppies_article_1"></span>
 
@@ -38,7 +39,8 @@
                                 
                             <span>{{item.year}}.</span>
 
-                            <img src="{{item.image.url}}" class="img-fluid rounded-start  mt-3" alt="...">
+                            <img src="{{item.image.url}}" class="img-fluid mt-3" style="width: 70%; border-radius: 3%;"  alt="...">
+                            <hr>
                         {% endfor %}
                     </div>
                 </div>
