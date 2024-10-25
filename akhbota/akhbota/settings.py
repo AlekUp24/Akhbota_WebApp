@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'blog',
     'kennel',
     'whitenoise.runserver_nostatic',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +121,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'djsivpiao',
+    'API_KEY': '448316922986468',
+    'API_SECRET': 'SV6dH9BdzH1WJq8k0bqvCNnlmwc',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ['static/']
 #STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -127,8 +138,8 @@ STATICFILES_DIRS = ['static/']
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = 'https://res.cloudinary.com/djsivpiao/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

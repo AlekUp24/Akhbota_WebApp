@@ -15,11 +15,9 @@
         <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="4000">
           <img src="{{item.image.url}}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <!--
-              <h5>{{ item.title }}</h5>
-              <p>{{ item.description }}</p>
-            -->
-            </div>
+            <h5>{{ item.title }}</h5>
+            <p>{{ item.description }}</p>
+          </div>
         </div>
       {% endfor %%}
     </div>
