@@ -6,7 +6,7 @@
 
 <!-- Kennel -->
 <div id="kennel" class="container rounded shadow p-3 mb-5 mt-5">
-    <div class="row col-12 text-center mb-4">
+    <div class="row col-12 text-center mb-4" >
         
         <!-- title translation -->
         {% if title|slice:":4" == "Bolo" %}
@@ -24,7 +24,7 @@
 
         <center>  
             {% for dog in dogs %}
-                    <div class="card mb-3 text-start px-5">
+                    <div class="card mb-3 text-start px-5" style="width: 90%;">
                         <div class="row mt-3">
                             {% if dog.image1 and dog.image2 %}
                                 <img src="{{dog.image1.url}}" class="img-fluid rounded-start " alt="...">
@@ -42,7 +42,14 @@
                                 {% if dog.awards %} 
                                     <h6>{{dog.awards}}</h6>
                                 {% endif %}
-                                <p class="card-text"><strong>{{dog.breed}}</strong></p>
+
+                                <!-- breed translation -->
+                                {% if title|slice:":4" == "Bolo" %}
+                                    <strong><p class="card-text my-2" data-lang-key="nav_hodowla_2">Bolończyk</p></strong>
+                                {% elif title|slice:":4" == "Rosy" %}
+                                    <strong><p class="card-text my-2" data-lang-key="nav_hodowla_3">Rosyjska Bolonka Kolorowa</p></strong>
+                                {% endif %}
+
 
                                 <p class="card-text">
                                     <strong data-lang-key="sex_info">Płeć:</strong>&nbsp;&nbsp;&nbsp;{{dog.sex}}
