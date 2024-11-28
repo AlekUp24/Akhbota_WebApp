@@ -135,8 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleButton: "EN",
 
       about_title: "O Nas",
-      about_description: "HODOWLA PSÓW RASY BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA ZAREJESTROWANA W ZWIĄZKU KYNOLOGICZNYM W POLSCE ORAZ W MIĘDZYNARODOWEJ ORGANIZACJI KYNOLOGICZNEJ (FCI).",
-      about_description_2: "Nasze psy są członkami rodziny, towarzysząc nam w codziennym życiu.",
+      about_description: "AKHBOTA (FCI) to hodowla psów rasy bolończyk i rosyjska bolonka kolorowa, zarejestrowana w Związku Kynologicznym w Polsce oraz w Międzynarodowej Organizacji Kynologicznej (FCI).",
+      about_description_2: "''Nikt nie zrozumie w pełni znaczenia miłości jeśli nie miał psa. Pies okaże ci więcej uczucia jednym machnięciem ogona niż możesz zebrać przez całe życie w uściskach rąk'' (Gene Hill).",
       about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
