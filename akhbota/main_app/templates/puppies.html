@@ -26,21 +26,25 @@
                                 {% endif %}
 
                             <span class="card-text" data-lang-key="puppies_article_2"></span>
-                                
+                            
+
                                 {% if item.period|slice:":2" == "je" %}
                                     <span data-lang-key="autumn"></span>
                                 {% elif item.period|slice:":2" == "zi" %}
-                                    <span data-lang-key="autumn"></span>
+                                    <span data-lang-key="winter"></span>
                                 {% elif item.period|slice:":2" == "wi" %}
-                                    <span data-lang-key="autumn"></span>
+                                    <span data-lang-key="spring"></span>
                                 {% elif item.period|slice:":2" == "la" %}
-                                    <span data-lang-key="autumn"></span>
+                                    <span data-lang-key="summer"></span>
                                 {% endif %}
                                 
                             <span>{{item.year}}.</span>
+                            <br>
 
-                            <img src="{{item.image.url}}" class="img-fluid mt-3" style="width: 60%; border-radius: 3%;"  alt="...">
-                            
+                            {% if item.image %}
+                                <img src="{{item.image.url}}" class="img-fluid mt-3" style="width: 60%; border-radius: 3%;"  alt="...">
+                            {% endif %}
+
                         </div>
                     </div>
                 </div>

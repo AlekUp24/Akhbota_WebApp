@@ -31,6 +31,4 @@ def puppies(request):
     breeds = Dog_Breed.objects.all()
     puppies = Puppies.objects.all()
 
-    print(len(puppies))
-
     return render(request, 'puppies.html' , {'puppies':puppies, 'breeds':breeds})

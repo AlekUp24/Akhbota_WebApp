@@ -55,14 +55,21 @@
                                 {% else %}
                                     <strong><p class="card-text my-2">{{ dog.breed }}</p></strong>
                                 {% endif %}
-
-
-                                <p class="card-text">
-                                    <strong data-lang-key="sex_info">Płeć:</strong>&nbsp;&nbsp;&nbsp;{{dog.sex}}
-                                </p>
                                 
+                                <!-- sex translation -->
                                 <p class="card-text">
-                                    <strong data-lang-key="date_of_birth_info">Data urodzenia:</strong>&nbsp;&nbsp;&nbsp;{{dog.birth_date}}
+                                    <strong data-lang-key="sex_info">Płeć:</strong>&nbsp;
+                                    {% if dog.sex|slice:":3" == "Suk" %}
+                                        <span class="card-text my-2" data-lang-key="sex_female">Suka</span>
+                                    {% elif dog.sex|slice:":3" == "Pie" %}
+                                        <span class="card-text my-2" data-lang-key="sex_male">Pies</span>
+                                    {% else %}
+                                        <span class="card-text my-2">{{ dog.breed }}</span>
+                                    {% endif %}
+                                </p>
+
+                                <p class="card-text">
+                                    <strong data-lang-key="date_of_birth_info">Data urodzenia:</strong>&nbsp;&nbsp;&nbsp;{{dog.birth_date|date:"Y/m/d"}}
                                 </p>
                                 
                                 <p class="card-text">
