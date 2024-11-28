@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_contact: "Kontakt",
 
       hodowla_description_1: "Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.",
-      hodowla_description_2: "Bolończyk to jedna z ras psów, należąca do grupy psów do towarzystwa, zaklasyfikowana do sekcji biszonów i ras pokrewnych. Typ lisowaty. Nie podlega próbom pracy.",
+      hodowla_description_2: "Bolończyk to piesek niewielkich rozmiarów o białej szacie należący do ras towarzyszących. Jest łatwy w ułożeniu, szybko się uczy i obdarza swojego człowieka czułością oraz przywiązaniem. Istotną informacją jest to, że rasa ta nie zrzuca włosa. . Bolończyk odpowiedni jest dla rodzin z dziećmi.",
       hodowla_description_3: "Rosyjska Tsvetnaya Bolonka, znana również jako Bolonka Zwetna w Niemczech lub znana po prostu jako Bolonka, to rzadka rasa zabawek typu Bichon, opracowana w Moskwie i Sankt Petersburgu w Rosji, od przodków mniejszych psów, takich jak Bichon Frise , Pudel Toy, Shih Tzu, Pekińczyk i Francuski Bolognese.",
       
       badge_description_1: "Psy wystawowe",
@@ -175,6 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // kennel
       sex_info: "Płeć:",
+      sex_female: "Suka",
+      sex_male: "Pies",
       additional_info: "Dodatkowe informacje:",
       date_of_birth_info: "Data urodzenia:",
       awards_info: "Nagrody:",
@@ -221,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_contact: "Contact",
 
       hodowla_description_1: "A puppy is a young dog. Some puppies can weigh 1-1.5 kg, while larger ones can weigh up to 7-11 kg. All puppies show primary variability, and healthy puppies grow rapidly after birth.",
-      hodowla_description_2: "The Bolognese is one of the dog breeds belonging to the group of companion dogs, classified into the bichon and related breeds section. Fox-like type. Not subject to work tests.",
+      hodowla_description_2: "The Bolognese is a small-sized dog with a white coat, belonging to companion breeds. It is easy to train, learns quickly, and shows affection and loyalty to its owner. An important fact is that this breed does not shed its hair. The Bolognese is well-suited for families with children.",
       hodowla_description_3: "The Russian Tsvetnaya Bolonka, also known as Bolonka Zwetna in Germany or known simply as Bolonka, is a rare Bichon-type toy breed developed in Moscow and Saint Petersburg, Russia, from ancestors of smaller dogs such as the Bichon Frize, Toy Poodle, Shih Tzu, Pekingese and French Bolognese.",
             
       badge_description_1: "Show dogs",
@@ -241,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // kennel
       sex_info: "Sex:",
+      sex_female: "Female",
+      sex_male: "Male",
       additional_info: "Additional information:",
       date_of_birth_info: "Date of birth:",
       awards_info: "Awards:",
