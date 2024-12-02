@@ -21,7 +21,18 @@
         {% if title|slice:":4" == "Bolo" %}
             <p class="mx-auto px-5" data-lang-key="hodowla_description_2"></p>
         {% elif title|slice:":4" == "Rosy" %}
-            <p class="mx-auto px-5" data-lang-key="hodowla_description_3"></p>
+            <p class="mx-10 px-5 mb-4" data-lang-key="hodowla_description_3"></p>
+            <center>
+                <ul class="mx-10 px-5 mb-4" style="width:70%;">
+                    <li class="text-start" data-lang-key="hodowla_description_3_1"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_2"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_3"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_4"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_5"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_6"></li>
+                    <li class="text-start" data-lang-key="hodowla_description_3_7"></li>
+                </ul>
+            </center>
         {% else %}
             <p class="mx-auto px-5">{{ description }}</p>
         {% endif %}
