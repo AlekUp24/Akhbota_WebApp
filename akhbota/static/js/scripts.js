@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       about_title: "O Nas",
       about_description: "AKHBOTA (FCI) to hodowla psów rasy bolończyk i rosyjska bolonka kolorowa, zarejestrowana w Związku Kynologicznym w Polsce oraz w Międzynarodowej Organizacji Kynologicznej (FCI).",
-      about_description_2: "''Nikt nie zrozumie w pełni znaczenia miłości jeśli nie miał psa. Pies okaże ci więcej uczucia jednym machnięciem ogona niż możesz zebrać przez całe życie w uściskach rąk'' (Gene Hill).",
+      about_description_2: "\"Nikt nie zrozumie w pełni znaczenia miłości jeśli nie miał psa. Pies okaże ci więcej uczucia jednym machnięciem ogona niż możesz zebrać przez całe życie w uściskach rąk\" (Gene Hill).",
       about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
@@ -156,8 +156,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hodowla_description_1: "Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.",
       hodowla_description_2: "Bolończyk to piesek niewielkich rozmiarów o białej szacie należący do ras towarzyszących. Jest łatwy w ułożeniu, szybko się uczy i obdarza swojego człowieka czułością oraz przywiązaniem. Istotną informacją jest to, że rasa ta nie zrzuca włosa. . Bolończyk odpowiedni jest dla rodzin z dziećmi.",
-      hodowla_description_3: "Rosyjska Tsvetnaya Bolonka, znana również jako Bolonka Zwetna w Niemczech lub znana po prostu jako Bolonka, to rzadka rasa zabawek typu Bichon, opracowana w Moskwie i Sankt Petersburgu w Rosji, od przodków mniejszych psów, takich jak Bichon Frise , Pudel Toy, Shih Tzu, Pekińczyk i Francuski Bolognese.",
       
+      hodowla_description_3: "Rosyjska bolonka kolorowa to wciąż mało znana rasa w Polsce, ale w krajach Skandynawskich, w Niemczech, Czechach bije rekordy popularności. Zalety rasy:",
+      hodowla_description_3_1:"małe pieski 3-4 kg, wysokość w kłębie do 26 cm, więc mogą podróżować w kabinie samolotowej",
+      hodowla_description_3_2:"aksamitna szata, nie linieją, nie mają obfitego podszerstka (do wyczesania w fazie zmiany włosa szczenięcego)",
+      hodowla_description_3_3:"wesołe, radosne, otwarte do ludzi, akceptują inne zwierzęta",
+      hodowla_description_3_4:"cieszą się dobrym zdrowiem",
+      hodowla_description_3_5:"odpowiednie zarówno dla domatorów jak i ludzi aktywnych – dopasowują się do trybu życia swojego opiekuna",
+      hodowla_description_3_6:"długowieczne, żyją nawet do 15-17 lat",
+      hodowla_description_3_7:"inteligentne, sprytne, empatyczne, czułe.",
+
       badge_description_1: "Psy wystawowe",
       badge_description_2: "Certyfikowana Hodowla",
       badge_description_3: "Nasze psy zdobyły wiele wyróżnień",
@@ -224,8 +232,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hodowla_description_1: "A puppy is a young dog. Some puppies can weigh 1-1.5 kg, while larger ones can weigh up to 7-11 kg. All puppies show primary variability, and healthy puppies grow rapidly after birth.",
       hodowla_description_2: "The Bolognese is a small-sized dog with a white coat, belonging to companion breeds. It is easy to train, learns quickly, and shows affection and loyalty to its owner. An important fact is that this breed does not shed its hair. The Bolognese is well-suited for families with children.",
-      hodowla_description_3: "The Russian Tsvetnaya Bolonka, also known as Bolonka Zwetna in Germany or known simply as Bolonka, is a rare Bichon-type toy breed developed in Moscow and Saint Petersburg, Russia, from ancestors of smaller dogs such as the Bichon Frize, Toy Poodle, Shih Tzu, Pekingese and French Bolognese.",
-            
+      
+      hodowla_description_3: "The Russian Colored Bolonka is still a relatively unknown breed in Poland, but in Scandinavian countries, Germany, and the Czech Republic, it is breaking popularity records. Advantages of the breed:",
+      hodowla_description_3_1:"small dogs, 3-4 kg, height at the withers up to 26 cm, so they can travel in the airplane cabin",
+      hodowla_description_3_2:"velvety coat, they do not shed, do not have a thick undercoat (only need brushing during the puppy coat change phase)",
+      hodowla_description_3_3:"cheerful, happy, open to people, accepting of other animals",
+      hodowla_description_3_4:"enjoy good health",
+      hodowla_description_3_5:"suitable for both homebodies and active people – they adapt to their owner’s lifestyle",
+      hodowla_description_3_6:"long-lived, can live up to 15-17 years",
+      hodowla_description_3_7:"intelligent, clever, empathetic, affectionate",
+      
+      
       badge_description_1: "Show dogs",
       badge_description_2: "Certified Kennel",
       badge_description_3: "Our dogs have won many awards",
