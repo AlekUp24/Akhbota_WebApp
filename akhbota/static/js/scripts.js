@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       about_title: "O Nas",
       about_description: "AKHBOTA (FCI) to hodowla psów rasy bolończyk i rosyjska bolonka kolorowa, zarejestrowana w Związku Kynologicznym w Polsce oraz w Międzynarodowej Organizacji Kynologicznej (FCI).",
-      about_description_2: "\"Nikt nie zrozumie w pełni znaczenia miłości jeśli nie miał psa. Pies okaże ci więcej uczucia jednym machnięciem ogona niż możesz zebrać przez całe życie w uściskach rąk\" (Gene Hill).",
+      about_description_2: "\"Nikt nie zrozumie w pełni znaczenia miłości jeśli nie miał psa. Pies okaże ci więcej uczucia jednym machnięciem ogona niż możesz zebrać przez całe życie w uściskach rąk.\" (Gene Hill)",
       about_fb_link: "Zapraszamy do śledzenia nas na:",
       contact_title: "Zapraszamy do kontaktu:",
       gallery_title: "Galeria",
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_contact: "Kontakt",
 
       hodowla_description_1: "Szczeniak to młody pies. Niektóre szczenięta mogą ważyć 1–1,5 kg, podczas gdy większe mogą ważyć do 7–11 kg. Wszystkie szczenięta wykazują pierwotną zmienność, a zdrowe szczenięta szybko rosną po urodzeniu.",
-      hodowla_description_2: "Bolończyk to piesek niewielkich rozmiarów o białej szacie należący do ras towarzyszących. Jest łatwy w ułożeniu, szybko się uczy i obdarza swojego człowieka czułością oraz przywiązaniem. Istotną informacją jest to, że rasa ta nie zrzuca włosa. . Bolończyk odpowiedni jest dla rodzin z dziećmi.",
+      hodowla_description_2: "Bolończyk to piesek niewielkich rozmiarów o białej szacie należący do ras towarzyszących. Jest łatwy w ułożeniu, szybko się uczy i obdarza swojego człowieka czułością oraz przywiązaniem. Istotną informacją jest to, że rasa ta nie zrzuca włosa. Bolończyk odpowiedni jest dla rodzin z dziećmi.",
       
       hodowla_description_3: "Rosyjska bolonka kolorowa to wciąż mało znana rasa w Polsce, ale w krajach Skandynawskich, w Niemczech, Czechach bije rekordy popularności. Zalety rasy:",
       hodowla_description_3_1:"małe pieski 3-4 kg, wysokość w kłębie do 26 cm, więc mogą podróżować w kabinie samolotowej",
@@ -211,8 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleButton: "PL",
 
       about_title: "About Us",
-      about_description: "Bolognese and Russkaya Tsvetnaya Bolonka dog breed registered in The Polish Kennel Club and The Federation Cynologique Internationale (FCI).",
-      about_description_2: "Our dogs accompany us in daily life as part of our family.",
+      about_description: "AKHBOTA (FCI) is a kennel specializing in Bolognese dogs and Russian Colored Bolonka, registered with the Polish Kennel Club and The Fédération Cynologique (FCI).",
+      about_description_2: "\"No one can fully understand the meaning of love unless he's owned a dog. A dog can show you more honest affection with a flick of his tail than a man can gather through a lifetime of handshakes.\" (Gene Hill)",
       about_fb_link: "Make sure to follow us:",
       contact_title: "Contact us:",
       gallery_title: "Gallery",
