@@ -17,6 +17,8 @@
                     <div class="row mt-3">
                         <div class="card-body">
                             <h5 class="card-title" data-lang-key="puppies_title"></h5>
+                            
+                            <!--
                             <span class="card-text" data-lang-key="puppies_article_1"></span>
 
                                 {% if item.rasa|slice:":4" == "Bolo" %}
@@ -26,8 +28,14 @@
                                 {% endif %}
 
                             <span class="card-text" data-lang-key="puppies_article_2"></span>
-                            
+                            -->
 
+                            {% if item.description_PL %}
+                                <span class="puppiesPL card-text">{{item.description_PL}}</span>
+                                <span class="puppiesENG card-text">{{item.description_EN}}</span>
+                            {% endif %}
+                            
+                            <!--
                                 {% if item.period|slice:":2" == "je" %}
                                     <span data-lang-key="autumn"></span>
                                 {% elif item.period|slice:":2" == "zi" %}
@@ -39,6 +47,7 @@
                                 {% endif %}
                                 
                             <span>{{item.year}}.</span>
+                            -->
                             <br>
 
                             {% if item.image %}

@@ -324,6 +324,19 @@ function applyLanguage(language) {
       element.style.display = language === 'pl' ? 'none' : 'block';
     });
   }
+
+  // Przełącz widoczność wszystkich nagłówków z klasami "puppiesPL" i "puppiesENG"
+  const puppiesPL = document.querySelectorAll('.puppiesPL');
+  const puppiesENG = document.querySelectorAll('.puppiesENG');
+  
+  if (puppiesPL.length > 0 && puppiesENG.length > 0) {
+    puppiesPL.forEach(element => {
+      element.style.display = language === 'pl' ? 'block' : 'none';
+    });
+    puppiesENG.forEach(element => {
+      element.style.display = language === 'pl' ? 'none' : 'block';
+    });
+  }
 }
 
 function toggleLanguage() {

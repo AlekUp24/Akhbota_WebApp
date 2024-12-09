@@ -60,10 +60,12 @@ class Puppies(models.Model):
     ('Bolończyk', 'Bolończyk'),
     ('Rosyjska Bolonka Kolorowa', 'Rosyjska Bolonka Kolorowa'),
     ]
-        
-    period = models.CharField(max_length=20, choices=Period_CHOICES, default='jesień')
-    year = models.CharField(max_length=20, choices=Year_CHOICES, default='2024')
-    rasa = models.CharField(max_length=100, choices=Breed_CHOICES, default='Bolończyk')
+    
+    description_PL = models.CharField(max_length=255)
+    description_EN = models.CharField(max_length=255)
+    period = models.CharField(max_length=20, choices=Period_CHOICES, default='jesień', blank=True)
+    year = models.CharField(max_length=20, choices=Year_CHOICES, default='2024',blank=True)
+    rasa = models.CharField(max_length=100, choices=Breed_CHOICES, default='Bolończyk', blank=True)
     image = models.ImageField(upload_to='uploads/puppies/', blank=True)
     
     class Meta:
