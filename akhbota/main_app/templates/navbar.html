@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav id="nav" class="navbar navbar-dark navbar-expand-lg my-navbar-color pt-3 pb-3 sticky-top">
     <div class="container px-4 px-lg-5 d-flex justify-content-between">
-      <a class="mb-0 h3 text-decoration-none logo" style="font-size:large;" href="{% url 'home' %}">AKHBOTA (FCI) BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA</a>
+      <a class="mb-0 h3 text-decoration-none logo" style="font-size:large;" href="{% url 'home' %}" data-lang-key="nav_title" >AKHBOTA (FCI) BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             
@@ -13,8 +13,10 @@
                     {% for breed in breeds %}
                       <li><a class="dropdown-item" href="{% url 'kennel' breed.breed %}" data-lang-key="{{ breed.breed }}">{{breed.breed}}</a></li>
                     {% endfor %}
+                    <!--
                     <li><hr class="dropdown-divider" /></li>
                     <li><a class="dropdown-item" href="{% url 'kennel' 'all' %}" data-lang-key="nav_nasze_psy">Wszyscy podopieczni</a></li>
+                    -->
                 </ul>
             </li>
             <li class="nav-item my-nav-item mx-1"><a class="nav-link" href="{% url 'puppies' %}" data-lang-key="nav_puppies">Szczenięta</a></li>

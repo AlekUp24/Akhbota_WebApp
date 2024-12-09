@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wyroznienie_title: "Co Nas Wyróżnia",
       certificates_title: "Nagrody i Certyfikaty",
 
+      nav_title: "AKHBOTA (FCI) BOLOŃCZYK I ROSYJSKA BOLONKA KOLOROWA",
       nav_about: "O nas",
       nav_hodowla: "Nasze Psy",
       nav_hodowla_1: "Szczenięta",
@@ -219,6 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wyroznienie_title: "Why Us",
       certificates_title: "Awards and Certificates",
       
+      nav_title: "AKHBOTA (FCI) BOLOGNESE AND RUSSIAN COLORFUL BOLOGNESE",
       nav_about: "About Us",
       nav_hodowla: "Kennel",
       nav_hodowla_1: "Puppies",
@@ -308,6 +310,19 @@ function applyLanguage(language) {
     blogButton.style.display = 'none'; // Ukryj przycisk w EN
   } else {
     blogButton.style.display = 'block'; // Pokaż przycisk w PL
+  }
+
+  // Przełącz widoczność wszystkich nagłówków z klasami "awardsPL" i "awardsENG"
+  const awardsPL = document.querySelectorAll('.awardsPL');
+  const awardsENG = document.querySelectorAll('.awardsENG');
+  
+  if (awardsPL.length > 0 && awardsENG.length > 0) {
+    awardsPL.forEach(element => {
+      element.style.display = language === 'pl' ? 'block' : 'none';
+    });
+    awardsENG.forEach(element => {
+      element.style.display = language === 'pl' ? 'none' : 'block';
+    });
   }
 }
 
