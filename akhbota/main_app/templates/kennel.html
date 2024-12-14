@@ -19,9 +19,9 @@
 
         <!-- description translation -->
         {% if title|slice:":4" == "Bolo" %}
-            <p class="mx-auto px-5" data-lang-key="hodowla_description_2"></p>
+            <p class="mx-auto px-5" style="width: 90%;" data-lang-key="hodowla_description_2"></p>
         {% elif title|slice:":4" == "Rosy" %}
-            <p class="mx-10 px-5 mb-4" data-lang-key="hodowla_description_3"></p>
+            <p class="mx-auto px-5 mb-4" style="width: 90%;" data-lang-key="hodowla_description_3"></p>
             <center>
                 <ul class="mx-10 px-5 mb-4" style="width:70%;">
                     <li class="text-start" data-lang-key="hodowla_description_3_1"></li>
@@ -87,14 +87,6 @@
                                 <p class="card-text">
                                     <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description}}
                                 </p>
-                                
-                                <!-- hide from the website as per Client request - 22/10/2024
-                                
-                                <p class="card-text">
-                                    <strong data-lang-key="health_info">Zdrowie:</strong>&nbsp;&nbsp;&nbsp;{{dog.medical}}
-                                </p>
-                                
-                                -->
                             </div>
                         </div>
                     </div>

@@ -79,7 +79,7 @@ nav .container {
 
 .logo:hover{
     transition: 0.3s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .toggle-button-translate:hover {
