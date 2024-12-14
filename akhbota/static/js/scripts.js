@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleButton: "PL",
 
       about_title: "About Us",
-      about_description: "AKHBOTA (FCI) is a kennel specializing in Bolognese dogs and Russian Colored Bolonka, registered with the Polish Kennel Club and The Fédération Cynologique (FCI).",
+      about_description: "AKHBOTA (FCI) is a kennel specializing in Bolognese dogs and Russian Colored Bolonka, registered with the Polish Kennel Club (ZKwP) and The Fédération Cynologique Internationale (FCI).",
       about_description_2: "\"No one can fully understand the meaning of love unless he's owned a dog. A dog can show you more honest affection with a flick of his tail than a man can gather through a lifetime of handshakes.\" (Gene Hill)",
       about_fb_link: "Make sure to follow us:",
       contact_title: "Contact us:",

@@ -17,41 +17,16 @@
                     <div class="row mt-3">
                         <div class="card-body">
                             <h5 class="card-title" data-lang-key="puppies_title"></h5>
-                            
-                            <!--
-                            <span class="card-text" data-lang-key="puppies_article_1"></span>
-
-                                {% if item.rasa|slice:":4" == "Bolo" %}
-                                    <span data-lang-key="nav_hodowla_2">Bolończyk</span>
-                                {% elif item.rasa|slice:":4" == "Rosy" %}
-                                    <span data-lang-key="nav_hodowla_3">Rosyjska Bolonka Kolorowa</span>
-                                {% endif %}
-
-                            <span class="card-text" data-lang-key="puppies_article_2"></span>
-                            -->
 
                             {% if item.description_PL %}
                                 <span class="puppiesPL card-text">{{item.description_PL}}</span>
                                 <span class="puppiesENG card-text">{{item.description_EN}}</span>
+                                <br>
                             {% endif %}
-                            
-                            <!--
-                                {% if item.period|slice:":2" == "je" %}
-                                    <span data-lang-key="autumn"></span>
-                                {% elif item.period|slice:":2" == "zi" %}
-                                    <span data-lang-key="winter"></span>
-                                {% elif item.period|slice:":2" == "wi" %}
-                                    <span data-lang-key="spring"></span>
-                                {% elif item.period|slice:":2" == "la" %}
-                                    <span data-lang-key="summer"></span>
-                                {% endif %}
-                                
-                            <span>{{item.year}}.</span>
-                            -->
-                            <br>
 
                             {% if item.image %}
                                 <img src="{{item.image.url}}" class="img-fluid mt-3" style="width: 60%; border-radius: 3%;"  alt="...">
+                                <br><br>
                             {% endif %}
 
                         </div>
@@ -60,15 +35,10 @@
             {% endfor %}
                     
 
-            <div class="col-md mt-5 mx-4">
+            <div class="col-md mt-5 mx-4" style="width: 87%;">
                 <p class="text-center display-6" data-lang-key="puppies_question" >Czego oczekujemy od Ciebie, jeśli kupisz od nas szczeniaczka?</p>
-                <p class="px-2" data-lang-key="puppies_text" >
-                    Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo.
-                    To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe!
-                    Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie najlepsze szczenię do tego celu.
-                    Czy wiesz, co łączy wszystkie nasze szczenięta?
-                    Uwielbiają spędzać z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem.
-                </p>
+                <p class="px-2" data-lang-key="puppies_text"></p>
+                <br>
             </div>
         </center>
     </div> 
