@@ -18,11 +18,16 @@ SECRET_KEY = 'django-insecure-lelp*qtj0t72!*997ed#48hr_o8=ld%os4ry^q$76_rdh_p8h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['akhbotawebapp-production.up.railway.app', 'https://akhbotawebapp-production.up.railway.app' ,'https://127.0.0.1', '127.0.0.1', 'https://akhbota.eu' ,'akhbota.eu']
-CSRF_TRUSTED_ORIGINS = ['https://akhbotawebapp-production.up.railway.app', 'https://akhbota.eu']
+ALLOWED_HOSTS = ['akhbotawebapp-production.up.railway.app', 
+                'www.akhbotawebapp-production.up.railway.app' , 
+                '127.0.0.1', 
+                'www.akhbota.eu' ,
+                'akhbota.eu']
+                
+CSRF_TRUSTED_ORIGINS = ['https://akhbota.eu', 'https://www.akhbota.eu']
 
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
