@@ -19,6 +19,7 @@ SECRET_KEY = 'django-insecure-lelp*qtj0t72!*997ed#48hr_o8=ld%os4ry^q$76_rdh_p8h(
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://akhbota.eu',
+                'akhbota.eu',
                 'https://akhbotawebapp-production.up.railway.app', 
                 'akhbotawebapp-production.up.railway.app']
 
