@@ -10,8 +10,10 @@ class DogForm(forms.ModelForm):
         model = Dog
         fields = '__all__'
         widgets = {
-            'description': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
-            'awards': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
+            'description_PL': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
+            'description_EN': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
+            'awards_PL': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
+            'awards_EN': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
             'medical': forms.Textarea(attrs={'rows': 10, 'cols': 80}),  # Adjust size as needed
         }
 
