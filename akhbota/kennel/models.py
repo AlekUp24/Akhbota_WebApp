@@ -21,7 +21,8 @@ class Dog(models.Model):
     ]
 
     name = models.CharField(max_length=100, blank=False)
-    description = models.CharField(max_length=10000, blank=True)
+    description_PL = models.CharField(max_length=10000, blank=True)
+    description_EN = models.CharField(max_length=10000, blank=True)
     breed = models.ForeignKey(Dog_Breed, on_delete=models.CASCADE, blank=False)
     sex =  models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='Pies')
     birth_date = models.DateField()

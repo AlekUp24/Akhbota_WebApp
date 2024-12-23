@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       puppies_article_1: "Oczekujemy szczeniąt rasy ",
       puppies_article_2: " w okresie ",
       puppies_question:"Czego oczekujemy od Ciebie, jeśli kupisz od nas szczeniaczka?",
-      puppies_text:"Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo. To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe! Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie najlepsze szczenię do tego celu. Czy wiesz, co łączy wszystkie nasze szczenięta? Uwielbiają spędzać z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem.",
+      puppies_text:"Oczekujemy, że kupisz towarzysza życia, którego pokochasz bezwarunkowo. To, że lubimy wystawiać nasze psy, nie oznacza, że oczekujemy, iż podzielasz nasze zainteresowania. Najważniejsze dla nas jest to, żeby nasze szczenięta miały wspaniałe życie domowe! Wystawy psów nie są dla każdego właściciela, ani dla każdego psa. Ale jeśli jesteś zainteresowany wystawami, daj nam znać, a my postaramy się znaleźć dla Ciebie szczenię. Czy wiesz, co łączy wszystkie nasze szczenięta? Będą uwielbiały z Tobą czas, zarówno w ogrodzie, jak i na kanapie przed telewizorem czy na wspólnym spacerze.",
 
       // year periods
       autumn: " jesień ",
@@ -337,6 +337,20 @@ function applyLanguage(language) {
       element.style.display = language === 'pl' ? 'none' : 'block';
     });
   }
+
+  // Przełącz widoczność wszystkich nagłówków z klasami "descriptionPL" i "descriptionENG"
+  const descriptionPL = document.querySelectorAll('.descriptionPL');
+  const descriptionENG = document.querySelectorAll('.descriptionENG');
+  
+  if (descriptionPL.length > 0 && descriptionENG.length > 0) {
+    descriptionPL.forEach(element => {
+      element.style.display = language === 'pl' ? 'block' : 'none';
+    });
+    descriptionENG.forEach(element => {
+      element.style.display = language === 'pl' ? 'none' : 'block';
+    });
+  }
+
 }
 
 function toggleLanguage() {

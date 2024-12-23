@@ -84,9 +84,16 @@
                                     <strong data-lang-key="date_of_birth_info">Data urodzenia:</strong>&nbsp;&nbsp;&nbsp;{{dog.birth_date|date:"Y/m/d"}}
                                 </p>
                                 
-                                <p class="card-text">
-                                    <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description}}
-                                </p>
+                                {% if dog.description_PL %} 
+                                    <p class="card-text descriptionPL">
+                                        <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description_PL}}    
+                                    </p>
+                                    <p class="card-text descriptionENG">
+                                        <strong data-lang-key="additional_info">Dodatkowe informacje:</strong>&nbsp;&nbsp;&nbsp;{{dog.description_EN}}
+                                    </p>
+                                {% endif %}
+                                <br>
+
                             </div>
                         </div>
                     </div>
